@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-22T06:24:07.732Z</updated>
+  <updated>2019-08-22T06:50:29.962Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/08/22/hello-world/"/>
     <id>http://yoursite.com/2019/08/22/hello-world/</id>
     <published>2019-08-22T05:35:48.000Z</published>
-    <updated>2019-08-22T06:24:07.732Z</updated>
+    <updated>2019-08-22T06:50:29.962Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg" alt="1"></p>        <div id="aplayer-BVZkWmZA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-BVZkWmZA"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "追光者",              author: "岑宁儿",              url: "https://music.163.com/#/song?id=483671599",              pic: "https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg" alt="1"></p>        <div id="aplayer-qKVhQhXZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-qKVhQhXZ"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "追光者",              author: "岑宁儿",              url: "https://music.163.com/m/song?id=483671599https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
     
     <summary type="html">
     
