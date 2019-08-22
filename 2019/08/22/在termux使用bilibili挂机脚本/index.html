@@ -68,7 +68,7 @@
 <meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1564441986/bc55c66307c450062d96faacc777f751fta5c.jpg">
 <meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1564442184/7f906e1c9bce1418cdbab8615f3559bcyc4vj.jpg">
 <meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566462547/143abbd398a3b809.jpg">
-<meta property="og:updated_time" content="2019-08-22T08:32:59.962Z">
+<meta property="og:updated_time" content="2019-08-22T08:37:33.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在termux使用bilibili挂机脚本">
 <meta name="twitter:description" content="点击下载Termux">
@@ -292,7 +292,7 @@
                 
               
 
-              <time title="创建时间：2019-08-22 15:34:14 / 修改时间：16:32:59" itemprop="dateCreated datePublished" datetime="2019-08-22T15:34:14+08:00">2019-08-22</time>
+              <time title="创建时间：2019-08-22 15:34:14 / 修改时间：16:37:33" itemprop="dateCreated datePublished" datetime="2019-08-22T15:34:14+08:00">2019-08-22</time>
             </span>
           
             
@@ -374,31 +374,17 @@
 
 <p>输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg up &amp;&amp; pkg in curl &amp;&amp; pkg in php &amp;&amp; pkg in git</span><br></pre></td></tr></table></figure>
-
-<p>安装依赖</p>
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441384/7e2b996e52eaf857e081b0979f204816hajns.jpg" alt="正在安装"></p>
-<p>安装完成之后呢，我们使用git工具把项目拉下来</p>
+<p>安装依赖<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441384/7e2b996e52eaf857e081b0979f204816hajns.jpg" alt="正在安装"><br>安装完成之后呢，我们使用git工具把项目拉下来</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/lkeme/BiliHelper.git &amp;&amp; cd BiliHelper/conf &amp;&amp; cp user.conf.example user.conf</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441632/05ca1a387616e27287e10df5d8d97e7e2ngv.jpg" alt="拉下来后"></p>
-<p>使用</p>
+<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441632/05ca1a387616e27287e10df5d8d97e7e2ngv.jpg" alt="拉下来后"><br>使用</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~ &amp;&amp; curl -sS https://getcomposer.org/installer | php</span><br></pre></td></tr></table></figure>
-
-<p>安装composer</p>
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441781/11b1a643ace54a54241360e0c44a8d3rhh3.jpg" alt="安装好了"></p>
-<p>然后通过</p>
+<p>安装composer<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441781/11b1a643ace54a54241360e0c44a8d3rhh3.jpg" alt="安装好了"><br>然后通过</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp composer.phar BiliHelper</span><br><span class="line">cd BiliHelper</span><br><span class="line">php composer.phar install</span><br></pre></td></tr></table></figure>
-
-<p>来安装挂机工具<br>安装好后如下图</p>
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441986/bc55c66307c450062d96faacc777f751fta5c.jpg" alt="安装完成"></p>
-<p>接下来是最后一步！设置用户名和密码<br>输入</p>
+<p>来安装挂机工具<br>安装好后如下图<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441986/bc55c66307c450062d96faacc777f751fta5c.jpg" alt="安装完成"><br>接下来是最后一步！设置用户名和密码<br>输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi conf/user.conf</span><br></pre></td></tr></table></figure>
-<p>进行设置</p>
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564442184/7f906e1c9bce1418cdbab8615f3559bcyc4vj.jpg" alt="配置的地方"></p>
-<p>最后通过esc和ZZ退出编辑器！<br>输入</p>
+<p>进行设置<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564442184/7f906e1c9bce1418cdbab8615f3559bcyc4vj.jpg" alt="配置的地方"><br>最后通过esc和ZZ退出编辑器！<br>输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php index.php</span><br></pre></td></tr></table></figure>
-<p>就可以运行了！</p>
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566462547/143abbd398a3b809.jpg" alt="运行中"></p>
+<p>就可以运行了！<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566462547/143abbd398a3b809.jpg" alt="运行中"></p>
 <p>更新：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd BiliHelper</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
 
@@ -455,8 +441,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/22/hello-world/" rel="next" title="hello-orld">
-                  <i class="fa fa-chevron-left"></i> hello-orld
+                <a href="/2019/08/22/hello-world/" rel="next" title="hello-world">
+                  <i class="fa fa-chevron-left"></i> hello-world
                 </a>
               
             </div>
