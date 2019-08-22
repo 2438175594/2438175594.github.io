@@ -1742,7 +1742,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2fc2ff;
+  background: #ffb9d2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2152,6 +2152,25 @@ pre .javascript .function {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.popular-posts-header {
+  border-bottom: 1px solid #eee;
+  display: block;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+ul.popular-posts {
+  padding: 0;
+}
+ul.popular-posts .popular-posts-item {
+  margin-left: 2em;
+}
+ul.popular-posts .popular-posts-item .popular-posts-title {
+  font-size: 0.875em;
+  font-weight: normal;
+  line-height: 2.4;
+  margin: 0;
 }
 .page-archive .posts-collapse .archive-move-on {
   background: #999;
