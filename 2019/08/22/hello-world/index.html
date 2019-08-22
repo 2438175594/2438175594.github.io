@@ -260,7 +260,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZHANGYIJIA">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://res.cloudinary.com/q2438175594/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1564537794/avatar.pngf">
+      <meta itemprop="image" content="https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -288,6 +288,20 @@
           
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/08/22/hello-world/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/08/22/hello-world/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
           <br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
@@ -296,7 +310,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>421</span>
+              <span>421字</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -306,7 +320,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span>1 分钟</span>
+              <span>1 分钟分钟</span>
             </span>
           
 
@@ -342,6 +356,29 @@
     
         
       
+        <div id="reward-container">
+  <div>我知道是不会有人点的，但万一有人想不开呢？</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="https://res.cloudinary.com/q2438175594/image/upload/v1566407838/wechatpay.png" alt="ZHANGYIJIA 微信支付">
+        <p>微信支付</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="https://res.cloudinary.com/q2438175594/image/upload/v1566407855/alipay.png" alt="ZHANGYIJIA 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+      
 
       <footer class="post-footer">
 
@@ -360,6 +397,9 @@
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
         </div>
           
@@ -402,7 +442,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
-      src="https://res.cloudinary.com/q2438175594/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1564537794/avatar.pngf"
+      src="https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png"
       alt="ZHANGYIJIA">
   <p class="site-author-name" itemprop="name">ZHANGYIJIA</p>
   <div class="site-description motion-element" itemprop="description"></div>
@@ -507,6 +547,17 @@
     <span title="站点阅读时长">1 分钟</span>
 </div>
 
+<div class="powered-by">
+	<i class="fa fa-user-md"></i>
+	<span id="busuanzi_container_site_uv">
+	        本站访客数:<span id="busuanzi_value_site_uv"></span>
+	</span>
+	<span class="post-meta-divider">|</span>
+	<span id="busuanzi_container_site_pv">
+		本站访问量<span id="busuanzi_value_site_pv"></span>
+	</span>
+</div>
+
         
 
 
@@ -576,6 +627,31 @@
   
   <script src="/js/post-details.js?v=7.3.0"></script>
 
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'k2Tldt5JuAglSh07hWK4QL79-gzGzoHsz',
+    appKey: 'QY8xiiDObunlYkejlFP7FjJX',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>

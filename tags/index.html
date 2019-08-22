@@ -354,7 +354,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
-      src="https://res.cloudinary.com/q2438175594/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1564537794/avatar.pngf"
+      src="https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png"
       alt="ZHANGYIJIA">
   <p class="site-author-name" itemprop="name">ZHANGYIJIA</p>
   <div class="site-description motion-element" itemprop="description"></div>
@@ -459,6 +459,17 @@
     <span title="站点阅读时长">1 分钟</span>
 </div>
 
+<div class="powered-by">
+	<i class="fa fa-user-md"></i>
+	<span id="busuanzi_container_site_uv">
+	        本站访客数:<span id="busuanzi_value_site_uv"></span>
+	</span>
+	<span class="post-meta-divider">|</span>
+	<span id="busuanzi_container_site_pv">
+		本站访问量<span id="busuanzi_value_site_pv"></span>
+	</span>
+</div>
+
         
 
 
@@ -529,6 +540,31 @@
     <script src="/js/post-details.js?v=7.3.0"></script>
 
   
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'k2Tldt5JuAglSh07hWK4QL79-gzGzoHsz',
+    appKey: 'QY8xiiDObunlYkejlFP7FjJX',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
