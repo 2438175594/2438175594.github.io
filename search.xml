@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[在termux使用bilibili挂机脚本]]></title>
+    <url>%2F2019%2F08%2F22%2F%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[点击下载Termux 输入 1pkg up &amp;&amp; pkg in curl &amp;&amp; pkg in php &amp;&amp; pkg in git 安装依赖 安装完成之后呢，我们使用git工具把项目拉下来 1git clone https://github.com/lkeme/BiliHelper.git &amp;&amp; cd BiliHelper/conf &amp;&amp; cp user.conf.example user.conf 使用 1cd ~ &amp;&amp; curl -sS https://getcomposer.org/installer | php 安装composer 然后通过 123cp composer.phar BiliHelpercd BiliHelperphp composer.phar install 来安装挂机工具安装好后如下图 接下来是最后一步！设置用户名和密码输入 1vi conf/user.conf 进行设置 最后通过esc和ZZ退出编辑器！输入 1php index.php 就可以运行了！ 更新： 12cd BiliHelpergit pull]]></content>
+      <categories>
+        <category>Termux</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>termux</tag>
+        <tag>bilibili</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hello-orld]]></title>
     <url>%2F2019%2F08%2F22%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-CNlexVjm"), narrow: false, autoplay: false, showlrc: false, music: { title: "追光者", author: "岑宁儿", url: "http://music.163.com/song/media/outer/url?id=483671599.mp3", pic: "https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-RcoXdQPZ"), narrow: false, autoplay: false, showlrc: false, music: { title: "追光者", author: "岑宁儿", url: "http://music.163.com/song/media/outer/url?id=483671599.mp3", pic: "https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>图</category>
         <category>音乐</category>
