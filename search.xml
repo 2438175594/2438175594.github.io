@@ -16,7 +16,7 @@
   <entry>
     <title><![CDATA[Hello Word]]></title>
     <url>%2F2019%2F08%2F22%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-kdrghUlI"), narrow: false, autoplay: false, showlrc: false, music: { title: "追光者", author: "岑宁儿", url: "http://music.163.com/song/media/outer/url?id=483671599.mp3", pic: "https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-loRxsprS"), narrow: false, autoplay: false, showlrc: false, music: { title: "追光者", author: "岑宁儿", url: "http://m10.music.126.net/20190823103208/d7c52417c7cd49bbc8f84dd6f3f5728b/ymusic/9313/cfac/35ad/332d8257716efd86d075809e61cfd5d5.mp3", pic: "https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>图</category>
         <category>音乐</category>
