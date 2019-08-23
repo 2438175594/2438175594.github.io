@@ -10,10 +10,10 @@ const ap = new APlayer({
 	cover: 'https://p2.music.126.net/CDOS3j7zAYrvs6She437yQ==/109951163593319450.jpg?param=130y130',
       },
 	  {
-	name: "Funky Stars",
-	artist: 'Quazar',
-	url: 'http://m10.music.126.net/20190823181427/184c57b531fde94ee60852ad399541fd/ymusic/259b/c32e/0a71/f588808685a3455013b14b5ec0ae015b.mp3',
-	cover: 'https://p1.music.126.net/Q14bFw6rRIhF2QijhLx8fQ==/18689498649065658.jpg?param=130y130',
+	name: "My Soul",
+	artist: 'July',
+	url: 'http://www.ytmp3.cn/down/50137.mp3',
+	cover: 'https://p2.music.126.net/NFl1s5Hl3E37dCaFIDHfNw==/727876697598920.jpg?param=130y130',
       },
 	  {
 	name: "追光者",
@@ -22,10 +22,16 @@ const ap = new APlayer({
 	cover: 'https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130',
       },
           {
-        name: "canon in d",
-        artist: 'Brian Crain',
-        url: 'http://www.ytmp3.cn/down/43418.mp3',
-        cover: 'http://p1.music.126.net/QGb9Vtyw7qHS00uEvPfM6g==/843325418547559.jpg?param=130y130',
+        name: "让酒",
+        artist: '摩登兄弟',
+        url: 'http://www.ytmp3.cn/down/53762.mp3',
+        cover: 'https://p1.music.126.net/JtRFFxXdu4TiKAhK7JT4OQ==/109951163830435640.jpg?param=130y130',
+      },
+	  {
+	name: "哪吒",
+	artist: '蔡翊昇',
+	url: 'http://www.ytmp3.cn/down/58327.mp3',
+	cover: 'https://p1.music.126.net/Za_wWwp1CRCMAesBbE994A==/109951163023780798.jpg?param=130y130',
       },
 	  {
         name: "Apologize",
