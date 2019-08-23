@@ -16,10 +16,10 @@ const ap = new APlayer({
 	cover: 'https://p1.music.126.net/Q14bFw6rRIhF2QijhLx8fQ==/18689498649065658.jpg?param=130y130',
       },
 	  {
-	name: "追光者"
-	artist: '岑宁儿'
-	url: 'http://www.ytmp3.cn/down/57711.mp3'
-	cover: 'https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130'
+	name: "追光者",
+	artist: '岑宁儿',
+	url: 'http://www.ytmp3.cn/down/57711.mp3',
+	cover: 'https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130',
       },
           {
         name: "canon in d",
