@@ -12,7 +12,7 @@ const ap = new APlayer({
 	  {
 	name: "Funky Stars",
 	artist: 'Quazar',
-	url: 'http://m10.music.126.net/20190823125557/b8e2b64bcf0503aab04f5b1f3b0e7d7d/ymusic/259b/c32e/0a71/f588808685a3455013b14b5ec0ae015b.mp3',
+	url: 'http://m10.music.126.net/20190823181427/184c57b531fde94ee60852ad399541fd/ymusic/259b/c32e/0a71/f588808685a3455013b14b5ec0ae015b.mp3',
 	cover: 'https://p1.music.126.net/Q14bFw6rRIhF2QijhLx8fQ==/18689498649065658.jpg?param=130y130',
       },
 	  {
@@ -24,7 +24,7 @@ const ap = new APlayer({
           {
         name: "canon in d",
         artist: 'Brian Crain',
-        url: 'http://m10.music.126.net/20190823102647/198ca43f8f3d61138b2c02a4a726a629/ymusic/2e49/e9f4/9f62/feacfeb028d2297061dc51fa061425d1.mp3',
+        url: 'http://www.ytmp3.cn/down/43418.mp3',
         cover: 'http://p1.music.126.net/QGb9Vtyw7qHS00uEvPfM6g==/843325418547559.jpg?param=130y130',
       },
 	  {
