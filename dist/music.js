@@ -15,6 +15,12 @@ const ap = new APlayer({
 	url: 'http://m10.music.126.net/20190823102528/3f1ed3e227de8de81e5f00d314b896fd/ymusic/259b/c32e/0a71/f588808685a3455013b14b5ec0ae015b.mp3',
 	cover: 'https://p1.music.126.net/Q14bFw6rRIhF2QijhLx8fQ==/18689498649065658.jpg?param=130y130',
       },
+	  {
+	name: "追光者"
+	artist: '岑宁儿'
+	url: 'http://www.ytmp3.cn/down/57711.mp3'
+	cover: 'https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130'
+      },
           {
         name: "canon in d",
         artist: 'Brian Crain',
