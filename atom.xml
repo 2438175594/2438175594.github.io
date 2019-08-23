@@ -47,9 +47,9 @@
     <link href="http://yoursite.com/2019/08/22/hello-world/"/>
     <id>http://yoursite.com/2019/08/22/hello-world/</id>
     <published>2019-08-22T05:35:48.000Z</published>
-    <updated>2019-08-23T04:56:22.178Z</updated>
+    <updated>2019-08-23T05:12:30.048Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg" alt="1"></p><a id="more"></a><p>────────<br><audio id="audio" controls preload="none"></audio></p><source id="mp3" src="http://www.ytmp3.cn/down/57711.mp3">]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg" alt="1"></p><a id="more"></a><p>────────</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=483671599&auto=0&height=66"></iframe>]]></content>
     
     <summary type="html">
     
