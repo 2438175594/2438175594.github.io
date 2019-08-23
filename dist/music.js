@@ -5,32 +5,32 @@ const ap = new APlayer({
     audio: [
 	{
 	name: "Visions",
-	artist: "Acreix",
-	url: "http://www.ytmp3.cn/down/47082.mp3",
-	cover: "https://p2.music.126.net/CDOS3j7zAYrvs6She437yQ==/109951163593319450.jpg?param=130y130",
+	artist: 'Acreix',
+	url: 'http://www.ytmp3.cn/down/47082.mp3',
+	cover: 'https://p2.music.126.net/CDOS3j7zAYrvs6She437yQ==/109951163593319450.jpg?param=130y130',
       },
 	  {
 	name: "Funky Stars",
-	artist: "Quazar",
-	url: "https://music.163.com/m/song?id=428350808",
-	cover: "https://p1.music.126.net/Q14bFw6rRIhF2QijhLx8fQ==/18689498649065658.jpg?param=130y130",
+	artist: 'Quazar',
+	url: 'http://music.163.com/song/media/outer/url?id=428350808.mp3',
+	cover: 'https://p1.music.126.net/Q14bFw6rRIhF2QijhLx8fQ==/18689498649065658.jpg?param=130y130',
       },
           {
         name: "canon in d",
         artist: 'Brian Crain',
-        url: 'http://pd2tflnys.bkt.clouddn.com/Brian%20Crain%20-%20canon%20in%20d.mp3',
+        url: 'http://music.163.com/song/media/outer/url?id=1091088.mp3',
         cover: 'http://p1.music.126.net/QGb9Vtyw7qHS00uEvPfM6g==/843325418547559.jpg?param=130y130',
       },
 	  {
         name: "Apologize",
         artist: 'Martin Ermen',
-        url: 'http://pd2tflnys.bkt.clouddn.com/Martin%20Ermen%20-%20Apologize.mp3',
+        url: 'http://music.163.com/song/media/outer/url?id=4224657.mp3',
         cover: 'http://p1.music.126.net/-_6mcI4VV5IKaiwhUAytbg==/1791104441647901.jpg?param=130y130',
       },
 	  {
         name: "River Flows in You",
         artist: 'Yiruma',
-        url: 'http://pd2tflnys.bkt.clouddn.com/Yiruma%20-%20River%20Flows%20in%20You.flac',
+        url: 'http://music.163.com/song/media/outer/url?id=20110049.mp3',
         cover: 'http://p1.music.126.net/8ZRSyI0ZN_4ah8uzsNd1mA==/2324367581169008.jpg?param=130y130',
       },
       {
