@@ -17,7 +17,7 @@ const ap = new APlayer({
       },
 	  {
 	name: "追光者",
-	artist: '岑宁儿',
+	artist: '-',
 	url: 'http://www.ytmp3.cn/down/57711.mp3',
 	cover: 'https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130',
       },
