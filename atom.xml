@@ -47,9 +47,9 @@
     <link href="http://yoursite.com/2019/08/22/hello-world/"/>
     <id>http://yoursite.com/2019/08/22/hello-world/</id>
     <published>2019-08-22T05:35:48.000Z</published>
-    <updated>2019-08-23T02:07:58.995Z</updated>
+    <updated>2019-08-23T02:17:59.795Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg" alt="1"></p><a id="more"></a>        <div id="aplayer-loRxsprS" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-loRxsprS"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "追光者",              author: "岑宁儿",              url: "http://m10.music.126.net/20190823103208/d7c52417c7cd49bbc8f84dd6f3f5728b/ymusic/9313/cfac/35ad/332d8257716efd86d075809e61cfd5d5.mp3",              pic: "https://p1.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg" alt="1"></p><a id="more"></a><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=483671599&auto=1&height=66"></iframe>]]></content>
     
     <summary type="html">
     
