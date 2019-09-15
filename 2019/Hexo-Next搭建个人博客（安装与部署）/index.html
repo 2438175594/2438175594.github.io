@@ -58,7 +58,7 @@
 </script>
 
   <meta name="description" content="Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js">
-<meta name="keywords" content="hexo,termux,教程">
+<meta name="keywords" content="教程,termux,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-Next搭建个人博客（安装与部署）">
 <meta property="og:url" content="https://2438175594.github.io/2019/Hexo-Next搭建个人博客（安装与部署）/index.html">
@@ -537,11 +537,11 @@
           
           <div class="post-tags">
             
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/教程/" rel="tag"># 教程</a>
             
               <a href="/tags/termux/" rel="tag"># termux</a>
             
-              <a href="/tags/教程/" rel="tag"># 教程</a>
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
             
           </div>
         
@@ -592,7 +592,7 @@
     </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
         
         
@@ -600,24 +600,27 @@
         
       
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
           文章目录
         </li>
-        <li class="sidebar-nav-overview">
+        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
           站点概览
         </li>
       </ul>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特点："><span class="nav-number">1.1.</span> <span class="nav-text">特点：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#速度快"><span class="nav-number">1.1.1.</span> <span class="nav-text">速度快</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持Markdown"><span class="nav-number">1.1.2.</span> <span class="nav-text">支持Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一键部署"><span class="nav-number">1.1.3.</span> <span class="nav-text">一键部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丰富的插件"><span class="nav-number">1.1.4.</span> <span class="nav-text">丰富的插件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub设置ssh"><span class="nav-number">3.</span> <span class="nav-text">GitHub设置ssh</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#激活仓库"><span class="nav-number">3.2.</span> <span class="nav-text">激活仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置SSH-key"><span class="nav-number">3.3.</span> <span class="nav-text">设置SSH key</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始push"><span class="nav-number">4.</span> <span class="nav-text">开始push</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+          <div class="post-toc">
+            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特点："><span class="nav-number">1.1.</span> <span class="nav-text">特点：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#速度快"><span class="nav-number">1.1.1.</span> <span class="nav-text">速度快</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持Markdown"><span class="nav-number">1.1.2.</span> <span class="nav-text">支持Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一键部署"><span class="nav-number">1.1.3.</span> <span class="nav-text">一键部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丰富的插件"><span class="nav-number">1.1.4.</span> <span class="nav-text">丰富的插件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub设置ssh"><span class="nav-number">3.</span> <span class="nav-text">GitHub设置ssh</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#激活仓库"><span class="nav-number">3.2.</span> <span class="nav-text">激活仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置SSH-key"><span class="nav-number">3.3.</span> <span class="nav-text">设置SSH key</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始push"><span class="nav-number">4.</span> <span class="nav-text">开始push</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+          </div>
         
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
       src="https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png"
       alt="ZHANGYIJIA">
@@ -749,11 +752,12 @@
     </ul>
   </div>
 
+        </div>
       </div>
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div id="sidebar-dimmer"></div>>
 
 
       </div>

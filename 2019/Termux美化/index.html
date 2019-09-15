@@ -58,7 +58,7 @@
 </script>
 
   <meta name="description" content="■软件名称:Termux">
-<meta name="keywords" content="教程,Termux">
+<meta name="keywords" content="Termux,教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Termux美化">
 <meta property="og:url" content="https://2438175594.github.io/2019/Termux美化/index.html">
@@ -460,9 +460,9 @@
           
           <div class="post-tags">
             
-              <a href="/tags/教程/" rel="tag"># 教程</a>
-            
               <a href="/tags/Termux/" rel="tag"># Termux</a>
+            
+              <a href="/tags/教程/" rel="tag"># 教程</a>
             
           </div>
         
@@ -517,7 +517,7 @@
     </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
         
         
@@ -525,11 +525,11 @@
         
       
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
           文章目录
         </li>
-        <li class="sidebar-nav-overview">
+        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
           站点概览
         </li>
       </ul>
@@ -540,7 +540,8 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
       src="https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png"
       alt="ZHANGYIJIA">
@@ -672,11 +673,12 @@
     </ul>
   </div>
 
+        </div>
       </div>
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div id="sidebar-dimmer"></div>>
 
 
       </div>

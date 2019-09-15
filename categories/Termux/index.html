@@ -386,14 +386,14 @@
     </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
           文章目录
         </li>
-        <li class="sidebar-nav-overview">
+        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
           站点概览
         </li>
       </ul>
@@ -404,7 +404,8 @@
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
       src="https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png"
       alt="ZHANGYIJIA">
@@ -536,11 +537,12 @@
     </ul>
   </div>
 
+        </div>
       </div>
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
+  <div id="sidebar-dimmer"></div>>
 
 
       </div>
