@@ -8,21 +8,21 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>教程</tag>
         <tag>hexo</tag>
         <tag>termux</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Termux美化]]></title>
     <url>%2F2019%2FTermux%E7%BE%8E%E5%8C%96%2F</url>
-    <content type="text"><![CDATA[■软件名称:Termux ■测试机型:OPPO A5■官方简介:高级终端Termux组合了强大的终端模拟 和拓展Linux包收集支持。享受bash和zsh。使用 nano和vim编辑文件。通过ssh访问服务器。使用 gcc和clang编译代码。使用python控制台来作为 口袋计算器。使用git和subversion检查项目。使 用frotz运行基于文本的游戏。【下载地址】Termux脚本链接【官方介绍】(有删改) 让你的 Termux 变的五颜六色～ 为 Termux 添加oh my zsh终端环境以及 zsh-syntax-highlighting，设置色彩样式（大部分来自 Gogh ）和 Powerline 字体（来自 powerline/fonts）。oh-my-zsh 主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。 【注意】此 Repo 使用 Termux 官方源，在中国大陆可能需要将 Termux 应用添加到代理列表。 第一步更新apt(遇到y/n输入y) 1apt update &amp;&amp; apt upgrade 第二步安装curl环境 1apt install curl 第三步安装脚本 1sh -c &quot;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&quot; 第四步跟着ohmyzsh设置(没有英语基础的可以一个个试)第一步是设置色彩样式第二步是设置字体(需重启termux后生效) 第二次打开时若要更换色彩样式输入 1~/.termux/colors.sh 更换字体输入 1~/.termux/fonts.sh]]></content>
+    <content type="text"><![CDATA[■软件名称:Termux ■测试机型:OPPO A5 ■官方简介:高级终端Termux组合了强大的终端模拟 和拓展Linux包收集支持。享受bash和zsh。使用nano和vim编辑文件。通过ssh访问服务器。使用gcc和clang编译代码。使用python控制台来作为口袋计算器。使用git和subversion检查项目。使用frotz运行基于文本的游戏。 【下载地址】Termux 【官方介绍】(有删改) 让你的 Termux 变的五颜六色～ 为Termux添加oh my zsh终端环境以及zsh-syntax-highlighting，设置色彩样式（大部分来自Gogh）和Powerline字体（来自powerline/fonts）。oh-my-zsh主题默认为agnoster，颜色样式默认为Tango，字体默认为Ubuntu。 【注意】此 Repo 使用 Termux 官方源，在中国大陆可能需要将 Termux 应用添加到代理列表。 第一步更新apt(遇到y/n输入y) 1apt update &amp;&amp; apt upgrade 第二步安装curl环境 1apt install curl 第三步安装脚本 1sh -c &quot;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&quot; 第四步跟着ohmyzsh设置(没有英语基础的可以一个个试)第一步是设置色彩样式第二步是设置字体(需重启termux后生效) 第二次打开时若要更换色彩样式输入 1~/.termux/colors.sh 更换字体输入 1~/.termux/fonts.sh]]></content>
       <categories>
         <category>Termux</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>Termux</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -33,8 +33,8 @@
         <category>Termux</category>
       </categories>
       <tags>
-        <tag>termux</tag>
         <tag>教程</tag>
+        <tag>termux</tag>
         <tag>bilibili</tag>
       </tags>
   </entry>
