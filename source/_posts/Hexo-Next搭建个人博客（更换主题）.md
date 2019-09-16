@@ -191,4 +191,5 @@ links_layout: block #友链摆放的样式,按块 一行一个
 #links_layout: inline #按线摆放,一行很多个 切记 同时只能一种样式
 links:
   Title: http://example.com/  #友链的地址
+{% endblockquote %}
 
