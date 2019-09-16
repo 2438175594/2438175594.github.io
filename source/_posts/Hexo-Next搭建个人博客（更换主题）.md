@@ -43,7 +43,6 @@ theme: next ##把landscape改为next
 # 配置
 
 站点配置文件路径`~/hexo/_config.yml`
-
 主题配置文件路径`~/hexo/themes/next/_config.yml`
 
 ## 站点
