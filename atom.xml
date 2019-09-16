@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://2438175594.github.io/"/>
-  <updated>2019-08-23T10:17:35.778Z</updated>
+  <updated>2019-09-16T09:40:43.563Z</updated>
   <id>https://2438175594.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-Next搭建个人博客（更换主题）</title>
+    <link href="https://2438175594.github.io/2019/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%EF%BC%89/"/>
+    <id>https://2438175594.github.io/2019/Hexo-Next搭建个人博客（更换主题）/</id>
+    <published>2019-09-16T06:47:14.000Z</published>
+    <updated>2019-09-16T09:40:43.563Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>#前置#<br>已经搭建好的<code>Hexo</code>的平台，在本地可以用<code>server</code>打开的也算；</p><p>如果没有，请阅读<a href="https://2438175594.github.io/2019/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/">Hexo-Next搭建个人博客（安装与部署）</a></p><p>#主题#<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">hexo主题</a>，这里有所有的主题，任君选择，找好主题之后，从 Github 上面下载下来，本人使用的是<a href="https://github.com/theme-next/hexo-theme-next/blob/master/README.md" target="_blank" rel="noopener">NexT</a></p><p>##安装##<br>最简单的安装方法是克隆整个存储库：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>或者，如果您需要任何其他变体，可以查看<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md" target="_blank" rel="noopener">详细的安装说明</a>。</p><p>##应用##<br>修改站点配置文件<code>_config.yml</code>把<code>theme</code>后改为<code>next</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># Extensions                                               ## Plugins: https://hexo.io/plugins/                       ## Themes: https://hexo.io/themes/                         theme: next ##把landscape改为next</span><br></pre></td></tr></table></figure><p>#配置#<br>站点配置文件路径<code>~/hexo/_config.yml</code><br>主题配置文件路径<code>~/hexo/themes/next/_config.yml</code></p><p>##站点##</p><p>###配置hexo网站相关信息###<br>找到site的设置 按下面备注修改相关信息</p><blockquote><h1 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h1><p>title: ⌬の空间  #网站标题<br>subtitle: 为了梦想而努力!  #网站副标题<br>description:     #描述,介绍网站的<br>keywords: 生活,科技 #网站的关键字<br>author: ZHANGYIJIA  #博主姓名<br>language: zh-CN #语言  zh-CN 是简体中文<br>timezone:    #时区</p></blockquote><p>###设置hexo永久链接###<br>设置永久链接的目的是为了便于分享和seo优化.这样别人收藏地址后不会出现链接失效</p><blockquote><h1 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h1><p>url: <a href="https://2438175594.github.io">https://2438175594.github.io</a> #网站的首页地址<br>root: / #网站的根目录设置<br>permalink: :year/:month/:day/:title.html # 这种设置的url表现为2018/10/18/hello-world.html 样式</p></blockquote><p>默认链接样式可修改为 (permalink配置只能有一种,关闭某种开头加 #)</p><blockquote><p>permalink: :category/:title.html #用分类和博客title当做url地址</p></blockquote><p>##主题配置##</p><p>###配置hexo中的tag,categories菜单###<br>默认菜单只开启了首页和归档,hexo所有图标均来自<a href="http://fontawesome.dashgame.com/" target="_blank" rel="noopener">fontawesome</a></p><blockquote><p>menu: #菜单设置为 菜单名: /菜单目录 || 菜单图标名字<br>  home: / || home<br>  about: /about/ || user<br>  tags: /tags/ || tags<br>  categories: /categories/ || th<br>  archives: /archives/ || archive<br>  commonweal: /404/ || heartbeat<br>menu_settings:<br>  icons: true  #显示图标<br>  badges: true  #显示统计信息</p></blockquote><p>手动生成hexo菜单对应文件 新菜单开启后是没有对应文件的,所以要手动生成about,tags,categories和404页面,这里我们将404替换成腾讯的公益页面</p><blockquote><p>新建about页面</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">hexo new page about #about就是普通的布局一般用来介绍站点信息和博主信息等</span><br></pre></td></tr></table></figure><blockquote><p>新建一个tags页面</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure><p>找到tags文件<code>hexo/source/tags/index.md</code>编辑它</p><blockquote><hr><p>title: All tags<br>date: 2018-10-01 13:58:44 #时间随意</p><h2 id="type-“tags”-类型一定要为tags"><a href="#type-“tags”-类型一定要为tags" class="headerlink" title="type: “tags” #类型一定要为tags"></a>type: “tags” #类型一定要为tags</h2></blockquote><blockquote><p>新建一个categories页面</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure><p>找到categories文件<code>hexo/source/categories/index.md</code>编辑它</p><blockquote><hr><p>title: 分类<br>date: 2018-10-15 00:03:57</p><h2 id="type-“categories”"><a href="#type-“categories”" class="headerlink" title="type: “categories”"></a>type: “categories”</h2></blockquote><blockquote><p>新建一个404页面</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">hexo new page 404</span><br></pre></td></tr></table></figure><p>找到404文件<code>hexo/source/404/index.md</code>编辑它,内容全部替换成如下</p><blockquote><!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><title>404</title></head><body><script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homepageurl="/" homepagename="返回"></script> </body></html> ```</blockquote><p>###配置hexo站点的footer信息###<br>底部footer可以开关显示hexo版权,theme版权,还有建站时间等个性化配置</p><blockquote><p>footer:<br>  since: 2015   #建站开始时间<br>  icon:<br>    name: user  #设置 建站初始时间和至今时间中间的图标 默认是一个’小人像’更改user为heart可以变成一个’心’<br>    color: “#808080” #更改图标的颜色 红色为 ‘#ff0000’<br>  powered:<br>    enable: true #是否开启hexo驱动<br>    version: true #是否开启hexo版本号<br>  theme:<br>    enable: true #是否开启theme驱动<br>    version: true #是否开启主题版本号<br>  custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a> #这里的底部标识是为了添加coding page服务时的版权声明 打开注释就可以看到底部有一个 hosted by coding pages</p></blockquote><p>###hexo网站next主题侧边栏宽度,头像信息,头像设置圆形和头像旋转###</p><blockquote><p>sidebar:<br>  position: left  #选择pisces 或者 gemini 主题是 可以 选择侧边栏 位置 调整左边或者右边</p><p>  #position: right<br>  width: 300   # muse mist 主题 可以控制侧边栏的宽度<br>  display: post   #如果是muse mist 主题 可以选择 侧边栏弹出动作  post 是 只在内容页弹出</p><p>  #display: always  #全局弹出</p><p>  #display: hide    #全局隐藏侧边栏 右下角有角标唤出</p><p>  #display: remove  #移除侧边栏<br>avatar:<br>  url: /images/avatar.gif  #设置头像资源的位置<br>  rounded: false  #开启圆形头像<br>  opacity: 1    #不透明的比例  0 就是完全透明<br>  rotated: false  #开启旋转</p></blockquote><p>##hexo中next主题的社交信息和友链配置##</p><blockquote><p>social: #和菜单设置格式一样  社交名字: 社交url || 社交图标 ,图标信息还是<a href="https://fontawesome.com/v4.7.0/icons" target="_blank" rel="noopener">fontawesome</a><br>  GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">https://github.com/yourname</a> || github<br>  E-Mail: mailto:<a href="mailto:yourname@gmail.com" target="_blank" rel="noopener">yourname@gmail.com</a> || envelope<br>  Google: <a href="https://plus.google.com/yourname" target="_blank" rel="noopener">https://plus.google.com/yourname</a> || google</p><p>social_icons:<br>  nable: true  #显示社交图标<br>  icons_only: false #只显示图标的开关</p><h1 id="Blog-rolls"><a href="#Blog-rolls" class="headerlink" title="Blog rolls"></a>Blog rolls</h1><p>links_icon: link  #友链的图标 参考上文<br>links_title: Links #友链的title  比如你可以更改为 友情链接<br>links_layout: block #友链摆放的样式,按块 一行一个</p><p>#links_layout: inline #按线摆放,一行很多个 切记 同时只能一种样式<br>links:<br>  Title: <a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a>  #友链的地址</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://2438175594.github.io/categories/hexo/"/>
+    
+    
+      <category term="教程" scheme="https://2438175594.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="hexo" scheme="https://2438175594.github.io/tags/hexo/"/>
+    
+      <category term="next" scheme="https://2438175594.github.io/tags/next/"/>
+    
+      <category term="termux" scheme="https://2438175594.github.io/tags/termux/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-Next搭建个人博客（安装与部署）</title>
@@ -60,9 +91,9 @@
       <category term="Termux" scheme="https://2438175594.github.io/categories/Termux/"/>
     
     
-      <category term="Termux" scheme="https://2438175594.github.io/tags/Termux/"/>
-    
       <category term="教程" scheme="https://2438175594.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="Termux" scheme="https://2438175594.github.io/tags/Termux/"/>
     
   </entry>
   
