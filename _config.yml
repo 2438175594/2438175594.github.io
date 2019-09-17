@@ -82,7 +82,7 @@ deploy:
   repo: 
       github: git@github.com:2438175594/2438175594.github.io.git
       coding: git@e.coding.net:zhangyijia/zhangyijia.git
-      gitee: git@gitee.com:bilibili-2233/2438175594.git
+      gitee: git@gitee.com:zhangyijia/zhangyijia.git
   btanch: master
 
 #
