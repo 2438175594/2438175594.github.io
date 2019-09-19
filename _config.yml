@@ -84,6 +84,7 @@ deploy:
       coding: git@e.coding.net:zhangyijia/zhangyijia.git
       gitee: git@gitee.com:zhangyijia/zhangyijia.git
       gitlab: git@gitlab.com:2438175594/2438175594.git
+      bitbucket: git@bitbucket.org:2438175594/zhangyijia.git
   btanch: master
 
 #
