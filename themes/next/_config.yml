@@ -334,7 +334,7 @@ reward_settings:
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
   enable: true
   animation: true
-  comment: 我知道是不会有人点的，但万一有人想不开呢？
+  comment: 如果你觉得这篇文章对你有用，欢迎赞赏哦~
 
 reward:
   wechatpay: https://res.cloudinary.com/q2438175594/image/upload/v1566447429/wechatpay.png 
