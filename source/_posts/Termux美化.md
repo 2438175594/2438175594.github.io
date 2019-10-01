@@ -11,7 +11,6 @@ categories: Termux
 ---
 ■软件名称:Termux
 <!-- more -->
-■测试机型:OPPO A5
 
 
 ■官方简介:高级终端Termux组合了强大的终端模拟 和拓展Linux包收集支持。享受bash和zsh。使用nano和vim编辑文件。通过ssh访问服务器。使用gcc和clang编译代码。使用python控制台来作为口袋计算器。使用git和subversion检查项目。使用frotz运行基于文本的游戏。
