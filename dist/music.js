@@ -19,7 +19,7 @@ const ap = new APlayer({
 	name: "追光者",
 	artist: '岑宁儿',
 	url: 'http://www.ytmp3.cn/down/57711.mp3',
-	cover: 'https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130',
+	cover: 'https://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9kYWJjb29vYWNuei1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9wYm0yNTc5X211YWJsX2NuL0VlbnNwVml4aWQ1Tmo1WWNMSXlyY0ZnQlRMMGF5ZEZhRjFxanhkaVFDcHFlZ3c/ZT1EUGJlTm8=.mp3',
       },
           {
         name: "让酒",
