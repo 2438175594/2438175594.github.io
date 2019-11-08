@@ -12,7 +12,7 @@ const ap = new APlayer({
 	  {
 	name: "My Soul",
 	artist: 'July',
-	url: 'http://m10.music.126.net/20191107131225/caea56c5ce34fc9592f2512ee5eea316/ymusic/0258/5659/045e/5289dde09ea3366948d534939748babe.mp3',
+	url: 'http://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9kYWJjb29vYWNuei1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9wYm0yNTc5X211YWJsX2NuL0VYaGlDWkpMd045THBneEFPN2gxZ2tRQjJ2dGI3UXE4OTdEWmFfaklOWW00aHc/ZT11S3V4N1g=.mp3',
 	cover: 'https://p2.music.126.net/NFl1s5Hl3E37dCaFIDHfNw==/727876697598920.jpg?param=130y130',
       },
 	  {
