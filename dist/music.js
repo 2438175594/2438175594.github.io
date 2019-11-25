@@ -24,7 +24,7 @@ const ap = new APlayer({
           {
         name: "让酒",
         artist: '摩登兄弟',
-        url: 'http://m10.music.126.net/20191107131314/f7a235c109ce6960acf35edb7ac77d57/ymusic/6424/cc93/e872/a3f70652c7a94d7d0e1fc173fd7db5e7.mp3',
+        url: 'http://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9kYWJjb29vYWNuei1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9wYm0yNTc5X211YWJsX2NuL0VVOEJvSVE4bndSR3R3RTNrYWhxZnZJQmliY3loeDFGWkR1UENTeVZuX3VEMGc/ZT0xZ2F5cTY=.mp3',
         cover: 'https://p1.music.126.net/JtRFFxXdu4TiKAhK7JT4OQ==/109951163830435640.jpg?param=130y130',
       },
 	  {
@@ -36,19 +36,19 @@ const ap = new APlayer({
 	  {
         name: "Apologize",
         artist: 'Martin Ermen',
-        url: 'http://www.ytmp3.cn/down/59606.mp3',
+        url: 'http://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9kYWJjb29vYWNuei1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9wYm0yNTc5X211YWJsX2NuL0VkV2tEcnQ0aWt0RnJBSlFRd2sySi13QlNUdVBsS2lobVlpVy1qeTNTOFZmMVE/ZT1GckZPaUo=.mp3',
         cover: 'http://p1.music.126.net/-_6mcI4VV5IKaiwhUAytbg==/1791104441647901.jpg?param=130y130',
       },
 	  {
         name: "River Flows in You",
         artist: 'Yiruma',
-        url: 'http://www.ytmp3.cn/down/56482.mp3',
+        url: 'http://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9kYWJjb29vYWNuei1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9wYm0yNTc5X211YWJsX2NuL0VWNWNLREtwdUtoUGh1VzN4VnltYkk4QllaSV9OWVhQQl80YVNhU01VUnlBcFE/ZT11YzBRNng=.mp3',
         cover: 'http://p1.music.126.net/8ZRSyI0ZN_4ah8uzsNd1mA==/2324367581169008.jpg?param=130y130',
       },
       {
         name: '惊蛰',
         artist: '音阙诗听/王梓钰',
-        url: 'http://www.ytmp3.cn/down/48755.mp3',
+        url: 'http://onedrive.gimhoy.com/sharepoint/aHR0cHM6Ly9kYWJjb29vYWNuei1teS5zaGFyZXBvaW50LmNvbS86dTovZy9wZXJzb25hbC9wYm0yNTc5X211YWJsX2NuL0VjYmdEakNqQ3pkTnY3ZnhnMzQ4S2U4QnFhZExBeXBaTXRLaW5NSkhVcFlKMkE/ZT1EVnlaZ2w=.mp3',
         cover: 'http://p1.music.126.net/5MmXpaP9r88tNzExPGMI8Q==/109951163370350985.jpg?param=130y130',
       }
     ]
