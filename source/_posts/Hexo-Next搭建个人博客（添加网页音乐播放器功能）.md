@@ -17,7 +17,11 @@ categories: hexo
 ![效果图](https://res.cloudinary.com/q2438175594/image/upload/v1568954382/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E6%B7%BB%E5%8A%A0%E7%BD%91%E9%A1%B5%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD%EF%BC%89/music.png)
 # download #
 
-点击访问Aplayer源码：[GitHub Aplayer](https://github.com/MoePlayer/APlayer)。下载到本地，解压后将 `dist` 文件夹复制到 `themes\next\source` 文件夹下。
+点击访问Aplayer源码：[GitHub Aplayer](https://github.com/MoePlayer/APlayer)。下载到本地，解压后将 
+`dist` 
+文件夹复制到 
+`themes\next\source` 
+文件夹下。
 
 # music.js #
 新建 
@@ -81,7 +85,7 @@ const ap = new APlayer({
 });
 {% endcodeblock %}
 源码中对应的参数解释，这边都有：[Aplayer 中文文档](https://aplayer.js.org/#/zh-Hans/)
-`audio` 对应的便是音频文件，所以音乐播放器需要播放的音乐是需要自己进行相关信息（如歌曲链接、歌词、封面等）的配置。这里放一个mp3音乐外链网站：http://up.mcyt.net/ ，搜索对应的音乐，然后复制 `url` 和右击封面图片链接粘贴到对应的位置上就行了。
+`audio` 对应的便是音频文件，所以音乐播放器需要播放的音乐是需要自己进行相关信息（如歌曲链接、歌词、封面等）的配置。~~这里放一个mp3音乐外链网站：http://up.mcyt.net/，搜索对应的音乐~~（网站挂了，我现在用的是[OneDrive直链](https://onedrive.gimhoy.com/)）复制 `url` 接粘贴到对应的位置上就行了。
 
 注：由于该外链网站没有歌词链接，我这边没有进行配置，所以播放器在播放音乐时点击歌词是没有显示的。
 

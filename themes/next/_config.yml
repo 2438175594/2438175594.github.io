@@ -99,7 +99,7 @@ footer:
 creative_commons:
   license: by-nc-sa
   sidebar: ture
-  post: ture
+  post: false
   language:
 
 
