@@ -230,7 +230,7 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: https://res.cloudinary.com/q2438175594/image/upload/v1564537794/avatar.png
+  url: https://res.cloudinary.com/q2438175594/image/upload/v1576310496/avatar.png
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # If true, the avatar would be rotated with the cursor.
