@@ -42,8 +42,10 @@ theme: next ##把landscape改为next
 
 # 配置
 
-站点配置文件路径`~/hexo/_config.yml`
-主题配置文件路径`~/hexo/themes/next/_config.yml`
+站点配置文件路径
+`~/hexo/_config.yml`
+主题配置文件路径
+`~/hexo/themes/next/_config.yml`
 
 ## 站点
 
@@ -101,7 +103,8 @@ hexo new page about #about就是普通的布局一般用来介绍站点信息和
 cd hexo
 hexo new page tags
 {% endcodeblock %}
-找到tags文件`hexo/source/tags/index.md`编辑它
+找到tags文件
+`hexo/source/tags/index.md`编辑它
 {% codeblock %}
 ---
 title: All tags
@@ -114,7 +117,8 @@ type: "tags" #类型一定要为tags
 cd blog
 hexo new page categories
 {% endcodeblock %}
-找到categories文件`hexo/source/categories/index.md`编辑它
+找到categories文件
+`hexo/source/categories/index.md`编辑它
 {% codeblock %}
 ---
 title: 分类

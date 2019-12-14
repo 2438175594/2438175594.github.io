@@ -36,7 +36,7 @@ Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, Coffe
 ---
 
 # 安装 hexo
-打开[termux](https://pan.baidu.com/s/1wFARwcZ18WgB0L5amZXCWQ#/)
+打开[Termux](https://termux.com/)
 按顺序执行以下命令。
 {% blockquote %}
 此处代码请一行一行的复制#号之前的内容并回车。

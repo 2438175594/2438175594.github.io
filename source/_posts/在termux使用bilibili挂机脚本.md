@@ -10,7 +10,7 @@ tags:
   - bilibili
 categories: Termux
 ---
-点击下载[Termux](https://pan.baidu.com/s/1wFARwcZ18WgB0L5amZXCWQ#/)
+点击下载[Termux](https://termux.com/)
 <!-- more -->
 
 输入
