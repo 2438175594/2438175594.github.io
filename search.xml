@@ -2,48 +2,48 @@
 <search>
   <entry>
     <title><![CDATA[Hexo-Next搭建个人博客（添加网页音乐播放器功能）]]></title>
-    <url>%2F2019%2FHexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E6%B7%BB%E5%8A%A0%E7%BD%91%E9%A1%B5%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8%E5%8A%9F%E8%83%BD%EF%BC%89%2F</url>
+    <url>%2F2019%2Fhexo-next-da-jian-ge-ren-bo-ke-tian-jia-wang-ye-yin-le-bo-fang-qi-gong-neng%2F</url>
     <content type="text"><![CDATA[为博客添加网页音乐播放器功能 效果图： download点击访问Aplayer源码：GitHub Aplayer。下载到本地，解压后将dist文件夹复制到themes\next\source文件夹下。 music.js新建themes\next\source\dist\music.js文件，添加内容： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455const ap = new APlayer(&#123; container: document.getElementById(&apos;aplayer&apos;), fixed: true, autoplay: false, audio: [ &#123; name: &quot;Visions&quot;, artist: &apos;Acreix&apos;, url: &apos;http://www.ytmp3.cn/down/47082.mp3&apos;, cover: &apos;https://p2.music.126.net/CDOS3j7zAYrvs6She437yQ==/109951163593319450.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;My Soul&quot;, artist: &apos;July&apos;, url: &apos;http://www.ytmp3.cn/down/50137.mp3&apos;, cover: &apos;https://p2.music.126.net/NFl1s5Hl3E37dCaFIDHfNw==/727876697598920.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;追光者&quot;, artist: &apos;岑宁儿&apos;, url: &apos;http://www.ytmp3.cn/down/57711.mp3&apos;, cover: &apos;https://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;让酒&quot;, artist: &apos;摩登兄弟&apos;, url: &apos;http://www.ytmp3.cn/down/53762.mp3&apos;, cover: &apos;https://p1.music.126.net/JtRFFxXdu4TiKAhK7JT4OQ==/109951163830435640.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;哪吒&quot;, artist: &apos;蔡翊昇&apos;, url: &apos;http://www.ytmp3.cn/down/58327.mp3&apos;, cover: &apos;https://p1.music.126.net/Za_wWwp1CRCMAesBbE994A==/109951163023780798.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;Apologize&quot;, artist: &apos;Martin Ermen&apos;, url: &apos;http://www.ytmp3.cn/down/59606.mp3&apos;, cover: &apos;http://p1.music.126.net/-_6mcI4VV5IKaiwhUAytbg==/1791104441647901.jpg?param=130y130&apos;, &#125;, &#123; name: &quot;River Flows in You&quot;, artist: &apos;Yiruma&apos;, url: &apos;http://www.ytmp3.cn/down/56482.mp3&apos;, cover: &apos;http://p1.music.126.net/8ZRSyI0ZN_4ah8uzsNd1mA==/2324367581169008.jpg?param=130y130&apos;, &#125;, &#123; name: &apos;惊蛰&apos;, artist: &apos;音阙诗听/王梓钰&apos;, url: &apos;http://www.ytmp3.cn/down/48755.mp3&apos;, cover: &apos;http://p1.music.126.net/5MmXpaP9r88tNzExPGMI8Q==/109951163370350985.jpg?param=130y130&apos;, &#125; ]&#125;); 源码中对应的参数解释，这边都有：Aplayer 中文文档audio 对应的便是音频文件，所以音乐播放器需要播放的音乐是需要自己进行相关信息（如歌曲链接、歌词、封面等）的配置。这里放一个mp3音乐外链网站：http://up.mcyt.net/，搜索对应的音乐（网站挂了，我现在用的是OneDrive直链）复制 url 接粘贴到对应的位置上就行了。 注：由于该外链网站没有歌词链接，我这边没有进行配置，所以播放器在播放音乐时点击歌词是没有显示的。 _layout.swig打开themes\next\layout\_layout.swig文件，将 1234&lt;link rel=&quot;stylesheet&quot; href=&quot;/dist/APlayer.min.css&quot;&gt;&lt;div id=&quot;aplayer&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/dist/music.js&quot;&gt;&lt;/script&gt; 添加到 &lt;body itemscope ...&gt; 后面就行，即在 &lt;body&gt;&lt;/body&gt; 里面。 重新生成，访问页面，就能看到左下角的音乐播放器了。]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>hexo</tag>
-        <tag>next</tag>
         <tag>termux</tag>
+        <tag>教程</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo-Next搭建个人博客（更换主题）]]></title>
-    <url>%2F2019%2FHexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98%EF%BC%89%2F</url>
+    <url>%2F2019%2Fhexo-next-da-jian-ge-ren-bo-ke-geng-huan-zhu-ti%2F</url>
     <content type="text"><![CDATA[前置已经搭建好的Hexo的平台，在本地可以用server打开的也算； 如果没有，请阅读Hexo-Next搭建个人博客（安装与部署） 主题hexo主题，这里有所有的主题，任君选择，找好主题之后，从 Github 上面下载下来，本人使用的是NexT 安装最简单的安装方法是克隆整个存储库： 12cd hexogit clone https://github.com/theme-next/hexo-theme-next themes/next 或者，如果您需要任何其他变体，可以查看详细的安装说明。 应用修改站点配置文件_config.yml把theme后改为next 1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: next ##把landscape改为next 配置站点配置文件路径~/hexo/_config.yml主题配置文件路径~/hexo/themes/next/_config.yml 站点配置hexo网站相关信息找到site的设置 按下面备注修改相关信息 12345678# Sitetitle: ⌬の空间 #网站标题subtitle: 为了梦想而努力! #网站副标题description: #描述,介绍网站的keywords: 生活,科技 #网站的关键字author: ZHANGYIJIA #博主姓名language: zh-CN #语言 zh-CN 是简体中文timezone: #时区 设置hexo永久链接设置永久链接的目的是为了便于分享和seo优化.这样别人收藏地址后不会出现链接失效 1234# URLurl: https://2438175594.github.io #网站的首页地址root: / #网站的根目录设置permalink: :year/:month/:day/:title.html # 这种设置的url表现为2018/10/18/hello-world.html 样式 默认链接样式可修改为 (permalink配置只能有一种,关闭某种开头加 #) 1permalink: :category/:title.html #用分类和博客title当做url地址 主题配置配置hexo中的tag,categories菜单默认菜单只开启了首页和归档,hexo所有图标均来自fontawesome 12345678910menu: #菜单设置为 菜单名: /菜单目录 || 菜单图标名字 home: / || home about: /about/ || user tags: /tags/ || tags categories: /categories/ || th archives: /archives/ || archive commonweal: /404/ || heartbeatmenu_settings: icons: true #显示图标 badges: true #显示统计信息 手动生成hexo菜单对应文件 新菜单开启后是没有对应文件的,所以要手动生成about,tags,categories页面 新建about页面 12cd hexohexo new page about #about就是普通的布局一般用来介绍站点信息和博主信息等 新建一个tags页面 12cd hexohexo new page tags 找到tags文件hexo/source/tags/index.md编辑它 12345---title: All tagsdate: 2018-10-01 13:58:44 #时间随意type: &quot;tags&quot; #类型一定要为tags--- 新建一个categories页面 12cd bloghexo new page categories 找到categories文件hexo/source/categories/index.md编辑它 12345---title: 分类date: 2018-10-15 00:03:57type: &quot;categories&quot;--- 配置hexo站点的footer信息底部footer可以开关显示hexo版权,theme版权,还有建站时间等个性化配置 123456789101112footer: since: 2015 #建站开始时间 icon: name: user #设置 建站初始时间和至今时间中间的图标 默认是一个&apos;小人像&apos;更改user为heart可以变成一个&apos;心&apos; color: &quot;#808080&quot; #更改图标的颜色 红色为 &apos;#ff0000&apos; powered: enable: true #是否开启hexo驱动 version: true #是否开启hexo版本号 theme: enable: true #是否开启theme驱动 version: true #是否开启主题版本号 custom_text: Hosted by &lt;a target=&quot;_blank&quot; rel=&quot;external nofollow&quot; href=&quot;https://pages.coding.me&quot;&gt;&lt;b&gt;Coding Pages&lt;/b&gt;&lt;/a&gt; #这里的底部标识是为了添加coding page服务时的版权声明 打开注释就可以看到底部有一个 hosted by coding pages hexo网站next主题侧边栏宽度,头像信息,头像设置圆形和头像旋转12345678910111213sidebar: position: left #选择pisces 或者 gemini 主题是 可以 选择侧边栏 位置 调整左边或者右边 #position: right width: 300 # muse mist 主题 可以控制侧边栏的宽度 display: post #如果是muse mist 主题 可以选择 侧边栏弹出动作 post 是 只在内容页弹出 #display: always #全局弹出 #display: hide #全局隐藏侧边栏 右下角有角标唤出 #display: remove #移除侧边栏avatar: url: /images/avatar.gif #设置头像资源的位置 rounded: false #开启圆形头像 opacity: 1 #不透明的比例 0 就是完全透明 rotated: false #开启旋转 hexo中next主题的社交信息和友链配置123456789101112131415161718social: #和菜单设置格式一样 社交名字: 社交url || 社交图标 ,图标信息还是[fontawesome](https://fontawesome.com/v4.7.0/icons) GitHub: https://github.com/yourname || github E-Mail: mailto:yourname@gmail.com || envelope Google: https://plus.google.com/yourname || googlesocial_icons: nable: true #显示社交图标 icons_only: false #只显示图标的开关# Blog rollslinks_icon: link #友链的图标 参考上文links_title: Links #友链的title 比如你可以更改为 友情链接links_layout: block #友链摆放的样式,按块 一行一个#links_layout: inline #按线摆放,一行很多个 切记 同时只能一种样式links: Title: http://example.com/ #友链的地址]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>hexo</tag>
-        <tag>next</tag>
         <tag>termux</tag>
+        <tag>教程</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo-Next搭建个人博客（安装与部署）]]></title>
-    <url>%2F2019%2FHexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89%2F</url>
+    <url>%2F2019%2Fhexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu%2F</url>
     <content type="text"><![CDATA[Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js 简介Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js。 特点：速度快 Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 支持Markdown Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 一键部署 只需一条指令即可部署到Github或其他网站 丰富的插件 Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。 安装 hexo打开Termux按顺序执行以下命令。 此处代码请一行一行的复制#号之前的内容并回车。 123456pkg update #升级包pkg install vim git nodejs openssh #询问之后输入 y 然后回车npm install -g hexo-cli #安装 hexohexo init hexo #新建一个名为 hexo 的文件夹并初始化 hexocd hexo #进入 hexo 文件夹npm install #部署 hexo 至此，hexo 已安装完成，指定的文件夹目录如下。 12345678.├── _config.yml├── package.json├── scaffolds├── source| ├── _drafts| └── _posts└── themes 更多信息可以查看建站|hexo。 继续我们的 hexo 12hexo new postname #postname 就是文章名称vim source/_posts/postname.md #用 vim 编辑器编辑 mark down 文本，就是你的文章 按i进入编辑模式。编辑完成后，按住音量加点击E模拟 Ees 键，输入ZZ保存并退出，当然也可以直接右滑后长按KEYBOARD调出辅助键盘。 12hexo generate #生成静态文件hexo server #启动服务器 以上命令也可以简写为 12hexo ghexo s 在浏览器输入http://localhost:4000 即可看到你的网站。至此，hexo 搭建完成。 GitHub设置ssh本来不想的，结果还是一堆图片,以下是一份超详细的GitHub注册教程。 注册首先需要注册一个 GitHub 账号，地址https://github.com。 GitHub的signup 点击Sign up for GitHub Github注册信息 填写自己的信息，用户名，邮箱和密码，出现红色的三角/字，就是用不了的意思，需要换一个别的。 GitHub注册确认 点击Create an account选择白嫖套餐 GitHub费用选择 确认选择 点击Continue然后去邮箱点击GitHub发来的连接以完成注册 GitHub页面 点击Desktop version点击+号点击点击New repository在repository name中填写username.github.io，其中，username 是你的用户名，填好后点击Create repository然后发现这个↓点击这个 复制按钮 或者复制这个按钮前面的一长串内容。 你会得到这样一串字符 1git@github.com:username/username.github.io.git 然后 12cd hexo #进入 hexo 文件夹vim _config.yml #修改配置文件 把 depoly 部分修改为： 1234deploy: type: git repo: git@github.com:username/username.github.io.git branch: master 保存并退出 请注意缩进，可使用`空格`或者`tab键` 其实就是上面复制的内容，当然你也可以直接填写repo部分，username 替换为你的用户名。 激活仓库回到浏览器点击README新建一个README文件用来激活仓库。随便写一些什么，反正一会就没有了，然后点击Commit new file然后你会看见这个至此，GitHub端工作完成 设置SSH key打开Termux，输入： 1ssh-keygen -t rsa -C &quot;example@mail.com&quot; #创建SSH key，引号内替换成你注册GitHub时填的邮箱。 之后会要求输入一次文件名，两次密码，可以直接回车忽略，SSH key创建成功之后，运行： 1vim .ssh/id_rsa.pub #进入SSH key的文件 复制里面所有内容后打开GitHub，点击头像↓ 点击Settings 点击SSH and GPG keys 点击new SSH key 出现以下内容：Title填自己喜欢的，Key里面粘贴刚才复制的密匙，填好后点Add SSH key 打开Termux，输入： 1ssh -T git@github.com #检验SSH key 向你确认，输入yes后回车。成功后会显示Hi rd-dafuz！…. 然后 1npm install hexo-deployer-git --save #安装git的拓展插件 此处报错时常见的解决方案 1npm config set registry https://registry.npm.taobao.org #切换到国内的淘宝源，对，阿里巴巴的那个淘宝！ 开始push12hexo generate #生成文件hexo deploy #部署文件 也可以简写为： 1hexo g -d 最后出现INFO Deploy done：git即为成功,打开https://username.github.io即可查看你的hexo了。 参考Termux 高级终端安装使用配置教程 | 国光文档 | Hexo及百度、bing、Google （请善用搜索引擎）]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>hexo</tag>
         <tag>termux</tag>
+        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Termux美化]]></title>
-    <url>%2F2019%2FTermux%E7%BE%8E%E5%8C%96%2F</url>
+    <url>%2F2019%2Ftermux-mei-hua%2F</url>
     <content type="text"><![CDATA[■软件名称:Termux ■官方简介:高级终端Termux组合了强大的终端模拟 和拓展Linux包收集支持。享受bash和zsh。使用nano和vim编辑文件。通过ssh访问服务器。使用gcc和clang编译代码。使用python控制台来作为口袋计算器。使用git和subversion检查项目。使用frotz运行基于文本的游戏。 【下载地址】Termux 【官方介绍】(有删改) 让你的 Termux 变的五颜六色～ 为Termux添加oh my zsh终端环境以及zsh-syntax-highlighting，设置色彩样式（大部分来自Gogh）和Powerline字体（来自powerline/fonts）。oh-my-zsh主题默认为agnoster，颜色样式默认为Tango，字体默认为Ubuntu。 【注意】此 Repo 使用 Termux 官方源，在中国大陆可能需要将 Termux 应用添加到代理列表。 第一步更新apt(遇到y/n输入y) 1apt update &amp;&amp; apt upgrade 第二步安装curl环境 1apt install curl 第三步安装脚本 1sh -c &quot;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&quot; 第四步跟着ohmyzsh设置(没有英语基础的可以一个个试)第一步是设置色彩样式第二步是设置字体(需重启termux后生效) 第二次打开时若要更换色彩样式输入 1~/.termux/colors.sh 更换字体输入 1~/.termux/fonts.sh]]></content>
       <categories>
         <category>Termux</category>
@@ -55,14 +55,14 @@
   </entry>
   <entry>
     <title><![CDATA[在termux使用bilibili挂机脚本]]></title>
-    <url>%2F2019%2F%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC%2F</url>
+    <url>%2F2019%2Fzai-termux-shi-yong-bilibili-gua-ji-jiao-ben%2F</url>
     <content type="text"><![CDATA[点击下载Termux 输入 1pkg up &amp;&amp; pkg in curl &amp;&amp; pkg in php &amp;&amp; pkg in git 安装依赖安装完成之后呢，我们使用git工具把项目拉下来 1git clone https://github.com/lkeme/BiliHelper.git &amp;&amp; cd BiliHelper/conf &amp;&amp; cp user.conf.example user.conf 使用 1cd ~ &amp;&amp; curl -sS https://getcomposer.org/installer | php 安装composer然后通过 123cp composer.phar BiliHelpercd BiliHelperphp composer.phar install 来安装挂机工具安装好后如下图接下来是最后一步！设置用户名和密码输入 1vi conf/user.conf 进行设置最后通过esc和ZZ退出编辑器！输入 1php index.php 就可以运行了！ 更新： 12cd BiliHelpergit pull]]></content>
       <categories>
         <category>Termux</category>
       </categories>
       <tags>
-        <tag>教程</tag>
         <tag>termux</tag>
+        <tag>教程</tag>
         <tag>bilibili</tag>
       </tags>
   </entry>
