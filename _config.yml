@@ -100,3 +100,8 @@ search:
   field: post
   format: html
   limit: 10000
+
+#
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
