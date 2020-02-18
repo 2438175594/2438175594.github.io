@@ -8,10 +8,10 @@
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>termux</tag>
         <tag>教程</tag>
+        <tag>hexo</tag>
         <tag>next</tag>
+        <tag>termux</tag>
       </tags>
   </entry>
   <entry>
@@ -22,10 +22,10 @@
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>termux</tag>
         <tag>教程</tag>
+        <tag>hexo</tag>
         <tag>next</tag>
+        <tag>termux</tag>
       </tags>
   </entry>
   <entry>
@@ -36,9 +36,9 @@
         <category>hexo</category>
       </categories>
       <tags>
+        <tag>教程</tag>
         <tag>hexo</tag>
         <tag>termux</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -56,13 +56,13 @@
   <entry>
     <title><![CDATA[在termux使用bilibili挂机脚本]]></title>
     <url>%2F2019%2Fzai-termux-shi-yong-bilibili-gua-ji-jiao-ben%2F</url>
-    <content type="text"><![CDATA[点击下载Termux 输入 1pkg up &amp;&amp; pkg in curl &amp;&amp; pkg in php &amp;&amp; pkg in git 安装依赖安装完成之后呢，我们使用git工具把项目拉下来 1git clone https://github.com/lkeme/BiliHelper.git &amp;&amp; cd BiliHelper/conf &amp;&amp; cp user.conf.example user.conf 使用 1cd ~ &amp;&amp; curl -sS https://getcomposer.org/installer | php 安装composer然后通过 123cp composer.phar BiliHelpercd BiliHelperphp composer.phar install 来安装挂机工具安装好后如下图接下来是最后一步！设置用户名和密码输入 1vi conf/user.conf 进行设置最后通过esc和ZZ退出编辑器！输入 1php index.php 就可以运行了！ 更新： 12cd BiliHelpergit pull]]></content>
+    <content type="text"><![CDATA[点击下载Termux 打开Termux输入 1pkg up &amp;&amp; pkg in curl &amp;&amp; pkg in php &amp;&amp; pkg in git 安装依赖安装完成之后呢，我们使用git工具把项目拉下来 1git clone https://github.com/lkeme/BiliHelper.git &amp;&amp; cd BiliHelper/conf &amp;&amp; cp user.conf.example user.conf 使用 1cd ~ &amp;&amp; curl -sS https://getcomposer.org/installer | php 安装composer然后通过 123cp composer.phar BiliHelpercd BiliHelperphp composer.phar install 来安装挂机工具安装好后如下图接下来是最后一步！设置用户名和密码输入 1vi conf/user.conf 进行设置最后通过esc和ZZ退出编辑器！输入 1php index.php 就可以运行了！ 更新： 12cd BiliHelpergit pull]]></content>
       <categories>
         <category>Termux</category>
       </categories>
       <tags>
-        <tag>termux</tag>
         <tag>教程</tag>
+        <tag>termux</tag>
         <tag>bilibili</tag>
       </tags>
   </entry>
