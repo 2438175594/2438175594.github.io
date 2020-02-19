@@ -81,7 +81,7 @@ deploy:
   type: git
   repo: 
       github: git@github.com:2438175594/2438175594.github.io.git
-      coding: git@e.coding.net:zhangyijia/zhangyijia.git
+      coding: git@e.coding.net:zhangyijia/zhangyijia.coding.me.git
       gitee: git@gitee.com:zhangyijia/zhangyijia.git
       gitlab: git@gitlab.com:2438175594/2438175594.git
       bitbucket: git@bitbucket.org:2438175594/zhangyijia.git

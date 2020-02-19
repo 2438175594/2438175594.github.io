@@ -13,7 +13,7 @@ categories: Termux
 点击下载[Termux](https://termux.com/)
 <!-- more -->
 
-输入
+打开Termux输入
 {% codeblock %}
 pkg up && pkg in curl && pkg in php && pkg in git
 {% endcodeblock %}
