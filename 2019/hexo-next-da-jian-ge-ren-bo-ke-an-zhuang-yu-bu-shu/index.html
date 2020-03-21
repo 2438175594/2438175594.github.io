@@ -1,432 +1,175 @@
 <!DOCTYPE html>
-
-
-
-
-
 <html lang="zh-CN">
-<head>
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.3.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.3.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.3.0">
-  <link rel="mask-icon" href="/images/logo.svg?v=7.3.0" color="#222">
-  <meta name="google-site-verification" content="XjSo09_fbjyLKnVgfU7Ui75wm3aMnfzxxo95HTFdQ2k">
-  <meta name="baidu-site-verification" content="81bea17f35fb6b136f619e5ed54a6259">
-
-<link rel="stylesheet" href="/css/main.css?v=7.3.0">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-
-
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '7.3.0',
-    exturl: false,
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
-    copycode: {"enable":true,"show_result":true,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: '复制',
-      copy_success: '复制成功',
-      copy_failure: '复制失败'
-    }
-  };
-</script>
-
-  <meta name="description" content="Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js">
-<meta name="keywords" content="hexo,termux,教程">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo-Next搭建个人博客（安装与部署）">
-<meta property="og:url" content="https://2438175594.github.io/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/index.html">
-<meta property="og:site_name" content="⌬の空间">
-<meta property="og:description" content="Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541198/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/1.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541410/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/2.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541469/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/3.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541513/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/4.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541573/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/5.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541620/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/6.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541662/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/7.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541728/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/8.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541781/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/9.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541830/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/10.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541879/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/11.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541931/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/12.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541995/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/13.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566542065/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/14.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566542125/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/15.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566542181/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/16.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566542240/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/17.png">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566542297/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/18.jpg">
-<meta property="og:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566542364/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/19.png">
-<meta property="og:updated_time" content="2019-12-14T07:32:46.380Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo-Next搭建个人博客（安装与部署）">
-<meta name="twitter:description" content="Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js">
-<meta name="twitter:image" content="https://res.cloudinary.com/q2438175594/image/upload/v1566541198/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/1.png">
-  <link rel="alternate" href="/atom.xml" title="⌬の空间" type="application/atom+xml">
-  <link rel="canonical" href="https://2438175594.github.io/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: false,
-    isPost: true,
-    isPage: false,
-    isArchive: false
-  };
-</script>
-
-  <title>Hexo-Next搭建个人博客（安装与部署） | ⌬の空间</title>
-  <meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146279771-1"></script>
-  <script>
-    var host = window.location.hostname;
-    if (host !== "localhost" || !true) {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-146279771-1');
-    }
-  </script>
+  <meta name="theme-color" content="#B0E0E6">
+  <meta name="description" content>
+  <meta name="author" content="ZHANGYIJIA">
+  <meta name="keywords" content="生活,科技">
+  <title>Hexo-Next搭建个人博客（安装与部署） - ⌬の空间</title>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/mdbootstrap/4.13.0/css/mdb.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
 
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?81bea17f35fb6b136f619e5ed54a6259";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+  <link defer rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css">
 
 
+<!-- 自定义样式保持在最底部 -->
 
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<div id="aplayer"></div>
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
-<script type="text/javascript" src="/dist/music.js"></script>
-  <div class="container use-motion">
-    <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>⌬の空间</strong>&nbsp;</a>
 
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">⌬の空间</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <p class="site-subtitle">为了梦想而努力!</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
   </div>
-</div>
-
-
-<nav class="site-nav">
-  
-  <ul id="menu" class="menu">
-      
-      
-      
-        
-        <li class="menu-item menu-item-home">
-      
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-about">
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-tags">
-      
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-categories">
-      
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-archives">
-      
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-sitemap">
-      
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a href="javascript:;" class="popup-trigger">
-        
-          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
-      </li>
-    
-  </ul>
-
-    
-
 </nav>
-  <div class="site-search">
-    <div class="popup search-popup">
-    <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-wrapper">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result"></div>
 
-</div>
-<div class="search-pop-overlay"></div>
-
-  </div>
-</div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content page-post-detail">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  <article class="post" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://2438175594.github.io/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZHANGYIJIA">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://res.cloudinary.com/q2438175594/image/upload/v1576310496/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="⌬の空间">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hexo-Next搭建个人博客（安装与部署）
-
-          
-        </h1>
-
-        <div class="post-meta">
-
-	
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://api-img.herokuapp.com') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
               
-                
-              
-
-              <time title="创建时间：2019-08-23 13:23:52" itemprop="dateCreated datePublished" datetime="2019-08-23T13:23:52+08:00">2019-08-23</time>
             </span>
-          
-            
 
             
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-14 15:32:46" itemprop="dateModified" datetime="2019-12-14T15:32:46+08:00">2019-12-14</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+                <p class="mt-3 post-meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  星期五, 八月 23日 2019, 1:23 下午
+                </p>
+              
+
+              <p class="mt-1">
+                
+                  
+                  <span class="post-meta">
+                    <i class="far fa-chart-bar"></i>
+                    1.1k 字
+                  </span>
+                
 
                 
+                  
+                  <span class="post-meta">
+                      <i class="far fa-clock"></i>
+                      4 分钟
+                  </span>
                 
-              
-            </span>
-          
+
+                
+              </p>
+            
+          </div>
 
           
-            <span class="post-meta-item" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-thumbs-o-up"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>2.5k字</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span>4 分钟</span>
-            </span>
-          
-
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  <main>
     
       
-        <p><em>Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js</em></p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5 z-depth-3" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+              <p
+                class="note note-warning">本文最后更新于：星期五, 三月 20日 2020, 11:49 晚上</p>
+            
+            <div class="markdown-body">
+              <p><em>Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js</em></p>
 <a id="more"></a>
 <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a>是一个快速、简洁且高效的静态站点生成框架，它基于<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a>。</p>
 <h2 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h2><blockquote><h3 id="速度快"><a href="#速度快" class="headerlink" title="速度快"></a>速度快</h3></blockquote>
@@ -442,509 +185,409 @@
 <blockquote><p>此处代码请一行一行的复制#号之前的内容并回车。</p>
 </blockquote>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pkg update　　#升级包</span><br><span class="line">pkg install vim git nodejs openssh　　#询问之后输入 y 然后回车</span><br><span class="line">npm install -g hexo-cli　　#安装 hexo</span><br><span class="line">hexo init hexo　　#新建一个名为 hexo 的文件夹并初始化 hexo</span><br><span class="line">cd hexo　　#进入 hexo 文件夹</span><br><span class="line">npm install　　#部署 hexo</span><br></pre></td></tr></table></figure>
+<pre><code>pkg update　　#升级包
+pkg install vim git nodejs openssh　　#询问之后输入 y 然后回车
+npm install -g hexo-cli　　#安装 hexo
+hexo init hexo　　#新建一个名为 hexo 的文件夹并初始化 hexo
+cd hexo　　#进入 hexo 文件夹
+npm install　　#部署 hexo</code></pre>
 
 <p>至此，hexo 已安装完成，指定的文件夹目录如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<pre><code>.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes</code></pre>
 
 <p>更多信息可以查看<a href="https://hexo.io/zh-cn/docs/setup" target="_blank" rel="noopener">建站|hexo</a>。</p>
 <p>继续我们的 hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new postname　　#postname 就是文章名称</span><br><span class="line">vim source/_posts/postname.md　　#用 vim 编辑器编辑 mark down 文本，就是你的文章</span><br></pre></td></tr></table></figure>
+<pre><code>hexo new postname　　#postname 就是文章名称
+vim source&#x2F;_posts&#x2F;postname.md　　#用 vim 编辑器编辑 mark down 文本，就是你的文章</code></pre>
 <p>按<code>i</code>进入编辑模式。<br>编辑完成后，按住<code>音量加点击E</code>模拟 Ees 键，输入<code>ZZ</code>保存并退出，当然也可以直接右滑后长按KEYBOARD调出辅助键盘。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate　　#生成静态文件</span><br><span class="line">hexo server　　#启动服务器</span><br></pre></td></tr></table></figure>
+<pre><code>hexo generate　　#生成静态文件
+hexo server　　#启动服务器</code></pre>
 <p>以上命令也可以简写为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<pre><code>hexo g
+hexo s</code></pre>
 <p>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到你的网站。至此，hexo 搭建完成。</p>
 <h1 id="GitHub设置ssh"><a href="#GitHub设置ssh" class="headerlink" title="GitHub设置ssh"></a>GitHub设置ssh</h1><p>本来不想的，结果还是一堆图片,以下是一份超详细的<a href="https://github.com" target="_blank" rel="noopener">GitHub</a>注册教程。</p>
-<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>首先需要注册一个 GitHub 账号，地址<a href="https://github.com。" target="_blank" rel="noopener">https://github.com。</a><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541198/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/1.png" alt="1"></p>
+<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>首先需要注册一个 GitHub 账号，地址<a href="https://github.com。" target="_blank" rel="noopener">https://github.com。</a><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541198/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/1.png" srcset="/img/loading.gif" alt="1"></p>
 <center>GitHub的signup</center>
 
-<p>点击<code>Sign up for GitHub</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541410/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/2.png" alt="2"></p>
+<p>点击<code>Sign up for GitHub</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541410/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/2.png" srcset="/img/loading.gif" alt="2"></p>
 <center>Github注册信息</center>
 
-<p>填写自己的信息，用户名，邮箱和密码，出现红色的三角/字，就是用不了的意思，需要换一个别的。<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541469/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/3.png" alt="3"></p>
+<p>填写自己的信息，用户名，邮箱和密码，出现红色的三角/字，就是用不了的意思，需要换一个别的。<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541469/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/3.png" srcset="/img/loading.gif" alt="3"></p>
 <center>GitHub注册确认</center>
 
-<p>点击<code>Create an account</code>选择白嫖套餐<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541513/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/4.png" alt="4"></p>
+<p>点击<code>Create an account</code>选择白嫖套餐<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541513/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/4.png" srcset="/img/loading.gif" alt="4"></p>
 <center>GitHub费用选择</center>
 
-<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541573/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/5.png" alt="5"></p>
+<p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541573/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/5.png" srcset="/img/loading.gif" alt="5"></p>
 <center>确认选择</center>
 
-<p>点击<code>Continue</code><br>然后去邮箱点击GitHub发来的连接以完成注册<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541620/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/6.png" alt="6"></p>
+<p>点击<code>Continue</code><br>然后去邮箱点击GitHub发来的连接以完成注册<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541620/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/6.png" srcset="/img/loading.gif" alt="6"></p>
 <center>GitHub页面</center>
 
-<p>点击<code>Desktop version</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541662/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/7.png" alt="7"><br>点击<code>+</code>号<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541728/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/8.png" alt="8"><br>点击点击<code>New repository</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541781/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/9.png" alt="9"><br>在<code>repository name</code>中填写<code>username.github.io</code>，其中，username 是你的用户名，填好后点击<code>Create repository</code>然后发现这个↓<img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541830/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/10.png" alt="10"><br>点击这个<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541879/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/11.png" alt="11"></p>
+<p>点击<code>Desktop version</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541662/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/7.png" srcset="/img/loading.gif" alt="7"><br>点击<code>+</code>号<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541728/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/8.png" srcset="/img/loading.gif" alt="8"><br>点击点击<code>New repository</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541781/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/9.png" srcset="/img/loading.gif" alt="9"><br>在<code>repository name</code>中填写<code>username.github.io</code>，其中，username 是你的用户名，填好后点击<code>Create repository</code>然后发现这个↓<img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541830/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/10.png" srcset="/img/loading.gif" alt="10"><br>点击这个<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541879/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/11.png" srcset="/img/loading.gif" alt="11"></p>
 <center>复制按钮</center>
 或者复制这个按钮前面的一长串内容。
 你会得到这样一串字符
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git@github.com:username/username.github.io.git</span><br></pre></td></tr></table></figure>
+<pre><code>git@github.com:username&#x2F;username.github.io.git</code></pre>
 然后
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo　　#进入 hexo 文件夹</span><br><span class="line">vim _config.yml　　#修改配置文件</span><br></pre></td></tr></table></figure>
+<pre><code>cd hexo　　#进入 hexo 文件夹
+vim _config.yml　　#修改配置文件</code></pre>
 把 depoly 部分修改为：
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com:username&#x2F;username.github.io.git
+  branch: master</code></pre>
 保存并退出
 请注意缩进，可使用`空格`或者`tab键`
 其实就是上面复制的内容，当然你也可以直接填写repo部分，username 替换为你的用户名。
 
-<h2 id="激活仓库"><a href="#激活仓库" class="headerlink" title="激活仓库"></a>激活仓库</h2><p>回到浏览器点击<code>README</code>新建一个<code>README</code>文件用来激活仓库。<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541931/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/12.png" alt="12"><br>随便写一些什么，反正一会就没有了，然后点击<code>Commit new file</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541995/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/13.png" alt="13"><br>然后你会看见这个<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542065/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/14.png" alt="14"><br>至此，GitHub端工作完成</p>
+<h2 id="激活仓库"><a href="#激活仓库" class="headerlink" title="激活仓库"></a>激活仓库</h2><p>回到浏览器点击<code>README</code>新建一个<code>README</code>文件用来激活仓库。<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541931/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/12.png" srcset="/img/loading.gif" alt="12"><br>随便写一些什么，反正一会就没有了，然后点击<code>Commit new file</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541995/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/13.png" srcset="/img/loading.gif" alt="13"><br>然后你会看见这个<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542065/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/14.png" srcset="/img/loading.gif" alt="14"><br>至此，GitHub端工作完成</p>
 <hr>
 <h2 id="设置SSH-key"><a href="#设置SSH-key" class="headerlink" title="设置SSH key"></a>设置SSH key</h2><p>打开Termux，输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;example@mail.com&quot;　　#创建SSH key，引号内替换成你注册GitHub时填的邮箱。</span><br></pre></td></tr></table></figure>
+<pre><code>ssh-keygen -t rsa -C &quot;example@mail.com&quot;　　#创建SSH key，引号内替换成你注册GitHub时填的邮箱。</code></pre>
 <p>之后会要求输入一次文件名，两次密码，可以直接回车忽略，SSH key创建成功之后，运行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim .ssh/id_rsa.pub　　#进入SSH key的文件</span><br></pre></td></tr></table></figure>
-<p>复制里面所有内容后打开GitHub，点击头像↓<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542125/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/15.png" alt="15"></p>
-<p>点击<code>Settings</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542181/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/16.png" alt="16"></p>
-<p>点击<code>SSH and GPG keys</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542240/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/17.png" alt="17"></p>
-<p>点击<code>new SSH key</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542297/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/18.jpg" alt="18"></p>
-<p>出现以下内容：<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542364/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/19.png" alt="19"><br>Title填自己喜欢的，Key里面粘贴刚才复制的密匙，填好后点<code>Add SSH key</code></p>
+<pre><code>vim .ssh&#x2F;id_rsa.pub　　#进入SSH key的文件</code></pre>
+<p>复制里面所有内容后打开GitHub，点击头像↓<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542125/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/15.png" srcset="/img/loading.gif" alt="15"></p>
+<p>点击<code>Settings</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542181/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/16.png" srcset="/img/loading.gif" alt="16"></p>
+<p>点击<code>SSH and GPG keys</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542240/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/17.png" srcset="/img/loading.gif" alt="17"></p>
+<p>点击<code>new SSH key</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542297/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/18.jpg" srcset="/img/loading.gif" alt="18"></p>
+<p>出现以下内容：<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542364/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/19.png" srcset="/img/loading.gif" alt="19"><br>Title填自己喜欢的，Key里面粘贴刚才复制的密匙，填好后点<code>Add SSH key</code></p>
 <p>打开Termux，输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com　　#检验SSH key</span><br></pre></td></tr></table></figure>
+<pre><code>ssh -T git@github.com　　#检验SSH key</code></pre>
 <p>向你确认，输入<code>yes</code>后回车。<br>成功后会显示Hi rd-dafuz！….</p>
 <p>然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save　　#安装git的拓展插件</span><br></pre></td></tr></table></figure>
+<pre><code>npm install hexo-deployer-git --save　　#安装git的拓展插件</code></pre>
 <p>此处报错时常见的解决方案</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org　　#切换到国内的淘宝源，对，阿里巴巴的那个淘宝！</span><br></pre></td></tr></table></figure>
+<pre><code>npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org　　#切换到国内的淘宝源，对，阿里巴巴的那个淘宝！</code></pre>
 
 
-<h1 id="开始push"><a href="#开始push" class="headerlink" title="开始push"></a>开始push</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate　　#生成文件</span><br><span class="line">hexo deploy　　#部署文件</span><br></pre></td></tr></table></figure>
+<h1 id="开始push"><a href="#开始push" class="headerlink" title="开始push"></a>开始push</h1><pre><code>hexo generate　　#生成文件
+hexo deploy　　#部署文件</code></pre>
 <p>也可以简写为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<pre><code>hexo g -d</code></pre>
 <p>最后出现<code>INFO Deploy done：git</code>即为成功,打开<code>https://username.github.io</code>即可查看你的hexo了。</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.sqlsec.com/2018/05/termux.html" target="_blank" rel="noopener">Termux 高级终端安装使用配置教程 | 国光</a><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">文档 | Hexo</a><br>及百度、bing、Google （请善用搜索引擎）</p>
 
-    </div>
-
-    
-    
-    
-        
-      
-        <div id="reward-container">
-  <div>如果你觉得这篇文章对你有用，欢迎赞赏哦~</div>
-  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-        
-      
-      <div style="display: inline-block">
-        <img src="https://res.cloudinary.com/q2438175594/image/upload/v1566447429/wechatpay.png" alt="ZHANGYIJIA 微信支付">
-        <p>微信支付</p>
-      </div>
-        
-      
-      <div style="display: inline-block">
-        <img src="https://res.cloudinary.com/q2438175594/image/upload/v1566448805/alipay.png" alt="ZHANGYIJIA 支付宝">
-        <p>支付宝</p>
-      </div>
-
-  </div>
-</div>
-
-      
-
-      <footer class="post-footer">
-          
-            
-          
-          <div class="post-tags">
-            
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
-            
-              <a href="/tags/termux/" rel="tag"># termux</a>
-            
-              <a href="/tags/教程/" rel="tag"># 教程</a>
-            
-          </div>
-        
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
+            </div>
+            <hr>
+            <div>
+              <p>
+                
+                  <span>
+                <i class="iconfont icon-inbox"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/hexo/">hexo</a>
+                      &nbsp;
+                    
+                  </span>&nbsp;&nbsp;
+                
+                
+                  <span>
+                <i class="iconfont icon-tag"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/termux/">termux</a>
+                    
+                      <a class="hover-with-bg" href="/tags/教程/">教程</a>
+                    
+                  </span>
+                
+              </p>
               
-                <a href="/2019/termux-mei-hua/" rel="next" title="Termux美化">
-                  <i class="fa fa-chevron-left"></i> Termux美化
-                </a>
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-12 col-sm-6">
+                    
+                    
+                      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-geng-huan-zhu-ti/">
+                        <i class="fa fa-chevron-left"></i>
+                        <span>Hexo-Next搭建个人博客（更换主题）</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-12 col-sm-6">
+                    
+                    
+                      <a href="/2019/termux-mei-hua/">
+                        <span>Termux美化</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
+                    
+                  </div>
+                </div>
               
             </div>
 
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-geng-huan-zhu-ti/" rel="prev" title="Hexo-Next搭建个人博客（更换主题）">
-                  Hexo-Next搭建个人博客（更换主题） <i class="fa fa-chevron-right"></i>
-                </a>
+                <!-- Comments -->
+                <div class="comments" id="comments">
+                  
+                  
+  <div id="lv-container" data-id="city" data-uid="MTAyMC80OTIxMy8yNTcwNw==">
+    <script type="text/javascript">
+      (function (d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+
+        if (typeof LivereTower === 'function') {
+          return;
+        }
+
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.defer = true;
+
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+  </div>
+
+
+                </div>
               
-            </div>
           </div>
-        
-      </footer>
-    
-  </div>
-  
-  
-  
-  </article>
-
-  </div>
-
-
-          </div>
-          
-    
-    <div class="comments" id="comments"></div>
-  
-
         </div>
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+      </div>
     </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-        
-        
-        
-        
-      
-
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc">
-            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特点："><span class="nav-number">1.1.</span> <span class="nav-text">特点：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#速度快"><span class="nav-number">1.1.1.</span> <span class="nav-text">速度快</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持Markdown"><span class="nav-number">1.1.2.</span> <span class="nav-text">支持Markdown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一键部署"><span class="nav-number">1.1.3.</span> <span class="nav-text">一键部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丰富的插件"><span class="nav-number">1.1.4.</span> <span class="nav-text">丰富的插件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub设置ssh"><span class="nav-number">3.</span> <span class="nav-text">GitHub设置ssh</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">3.1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#激活仓库"><span class="nav-number">3.2.</span> <span class="nav-text">激活仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置SSH-key"><span class="nav-number">3.3.</span> <span class="nav-text">设置SSH key</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始push"><span class="nav-number">4.</span> <span class="nav-text">开始push</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
-          </div>
-        
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image"
-      src="https://res.cloudinary.com/q2438175594/image/upload/v1576310496/avatar.png"
-      alt="ZHANGYIJIA">
-  <p class="site-author-name" itemprop="name">ZHANGYIJIA</p>
-  <div class="site-description motion-element" itemprop="description"></div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc-start"></div>
+<div id="toc">
+  <p class="h5"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
 </div>
-  <nav class="site-state motion-element">
-      <div class="site-state-item site-state-posts">
-        
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">6</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
+
       </div>
     
-      
-      
-      <div class="site-state-item site-state-categories">
-        
-          
-            <a href="/categories/">
-          
-        
-        
-        
-          
-        
-          
-        
-          
-        
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">分类</span>
-        </a>
-      </div>
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
-      
-      
-      <div class="site-state-item site-state-tags">
-        
-          
-            <a href="/tags/">
-          
-        
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        <span class="site-state-item-count">8</span>
-        <span class="site-state-item-name">标签</span>
-        </a>
-      </div>
-    
-  </nav>
-  <div class="feed-link motion-element">
-    <a href="/atom.xml" rel="alternate">
-      <i class="fa fa-rss"></i>RSS
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
     </a>
-  </div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://github.com/2438175594" title="GitHub &rarr; https://github.com/2438175594" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-      </span>
-    
-      <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="mailto:z2438175594@163.com" title="E-Mail &rarr; mailto:z2438175594@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-      </span>
-    
-      <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="https://qm.qq.com/cgi-bin/qm/qr?k=IwLJ7mbXV6Dqf48NHsvnBm3DYGML8RHh" title="QQ &rarr; https://qm.qq.com/cgi-bin/qm/qr?k=IwLJ7mbXV6Dqf48NHsvnBm3DYGML8RHh" rel="noopener" target="_blank"><i class="fa fa-fw fa-qq"></i>QQ</a>
-      </span>
-    
-  </div>
-  <div class="cc-license motion-element" itemprop="license">
-    
   
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
-  </div>
 
-
-  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-    <div class="links-of-blogroll-title">
-      <i class="fa  fa-fw fa-globe"></i>
-      
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://github.com/theme-next/hexo-theme-next" title="https://github.com/theme-next/hexo-theme-next" rel="noopener" target="_blank">NEXT</a>
-        </li>
-      
-        <li class="links-of-blogroll-item">
-          <a href="https://hexo.io/zh-cn/docs/" title="https://hexo.io/zh-cn/docs/" rel="noopener" target="_blank">HEXO</a>
-        </li>
-      
-    </ul>
-  </div>
-
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
         </div>
+        <div class="list-group" id="local-search-result"></div>
       </div>
-
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-address-card-o"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">ZHANGYIJIA</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    <span title="站点总字数">10k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">17 分钟</span>
+  </div>
 </div>
+  
 
-<div class="powered-by">
-	<i class="fa fa-user-md"></i>
-	<span id="busuanzi_container_site_uv">
-	        本站访客数:<span id="busuanzi_value_site_uv"></span>
-	</span>
-	<span class="post-meta-divider">|</span>
-	<span id="busuanzi_container_site_pv">
-		本站访问量<span id="busuanzi_value_site_pv"></span>
-	</span>
-</div>
-<div>
-<!-- 网站运行时间的设置 -->
-<span>已在此守候<span id="showDays"></span></span>
-<script>
-  var seconds = 1000;
-  var minutes = seconds * 60;
-  var hours = minutes * 60;
-  var days = hours * 24;
-  var years = days * 365;
-  var birthDay = Date.UTC(2019,08,18,06,12,48); // 这里设置建站时间
-  setInterval(function() {
-    var today = new Date();
-    var todayYear = today.getFullYear();
-    var todayMonth = today.getMonth()+1;
-    var todayDate = today.getDate();
-    var todayHour = today.getHours();
-    var todayMinute = today.getMinutes();
-    var todaySecond = today.getSeconds();
-    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-    var diff = now - birthDay;
-    var diffYears = Math.floor(diff/years);
-    var diffDays = Math.floor((diff/days)-diffYears*365);
-    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById('showDays').innerHTML=""+diffYears+"年"+diffDays+"天"+diffHours+"小时"+diffMinutes+"分钟"+diffSeconds+"秒";
-  }, 1000);
-</script>
+  
 
+  
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    </div>
+    
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
+
+    
   </div>
-  <div class="reading-progress-bar"></div>
+</footer>
 
-  </div>
-
-  
-  <script src="/lib/jquery/index.js?v=3.4.1"></script>
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-<script src="/js/utils.js?v=7.3.0"></script><script src="/js/motion.js?v=7.3.0"></script>
-<script src="/js/schemes/muse.js?v=7.3.0"></script>
-<script src="/js/next-boot.js?v=7.3.0"></script>
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="https://cdn.staticfile.org/mdbootstrap/4.13.0/js/mdb.min.js" ></script>
+<script  src="/js/main.js" ></script>
 
 
-
-  
-
-
-
-
-
-
-
-
-  <script src="/js/local-search.js?v=7.3.0"></script>
-
-
-
-
-
-
-
-
-
-
-
+  <script  src="/js/lazyload.js" ></script>
 
 
 
   
+  <script  src="https://cdn.staticfile.org/tocbot/4.10.0/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var navHeight = $('#navbar').height();
+      var toc = $('#toc');
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+      var tocLimMax = 2 * boardTop + boardCtn.height();
 
-  
+      $(window).scroll(function () {
+        var tocLimMin = $('#toc-start').offset().top - navHeight;
+        var scroH = document.body.scrollTop + document.documentElement.scrollTop;
 
-  
+        if (tocLimMin <= scroH && scroH <= tocLimMax) {
+          toc.css({
+            'display': 'block',
+            'position': 'fixed',
+            'top': navHeight,
+          });
+        } else if (scroH <= tocLimMin) {
+          toc.css({
+            'position': '',
+            'top': '',
+          });
+        } else if (scroH > tocLimMax) {
+          toc.css('display', 'none');
+        }
+      });
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc > p').css('visibility', 'visible');
+      }
+      var offset = boardCtn.css('margin-right')
+      $('#toc-ctn').css({
+        'right': offset
+      })
+    });
+  </script>
 
 
-  
-  <script src="/js/post-details.js?v=7.3.0"></script>
 
 
 
-<script>
-NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(item => {
-    return GUEST.indexOf(item) > -1;
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: 'k2Tldt5JuAglSh07hWK4QL79-gzGzoHsz',
-    appKey: 'QY8xiiDObunlYkejlFP7FjJX',
-    placeholder: '各位道友，请举手发言!',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: '' || 'zh-cn',
-    path: location.pathname
-  });
-}, window.Valine);
-</script>
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
 
 
 
-  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-  <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
+
+
+
+<!-- Plugins -->
+
+
+
+  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Hexo-Next搭建个人博客（安装与部署）&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script defer src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
