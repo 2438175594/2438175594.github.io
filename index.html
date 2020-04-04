@@ -20,18 +20,16 @@
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/mdbootstrap/4.13.0/css/mdb.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css">
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
 
 
   <link rel="stylesheet" href="/lib/prettify/tomorrow.min.css">
 
+
+
+
 <link rel="stylesheet" href="/css/main.css">
-
-
-  <link defer rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css">
-
 
 <!-- 自定义样式保持在最底部 -->
 
@@ -119,7 +117,7 @@
          style="background: url('https://cdn.jsdelivr.net/gh/miku-o/imgData/2020/03/21/612d6ess22.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
+        <div class="mask flex-center">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -141,7 +139,7 @@
   <main>
     
       <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board"
+        <div class="py-5" id="board"
           style=margin-top:0>
           
           <div class="container">
@@ -158,7 +156,7 @@
         <p class="h4 index-header">Hello Word</p>
       </a>
 
-      <a href="/2019/hello-world/">
+      <a href="/2019/hello-world/" class="index-excerpt-wrap">
         
         
           
@@ -199,7 +197,7 @@
         <p class="h4 index-header">Hexo-Next搭建个人博客（添加网页音乐播放器功能）</p>
       </a>
 
-      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-tian-jia-wang-ye-yin-le-bo-fang-qi-gong-neng/">
+      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-tian-jia-wang-ye-yin-le-bo-fang-qi-gong-neng/" class="index-excerpt-wrap">
         
         
           
@@ -244,7 +242,7 @@
         <p class="h4 index-header">Hexo-Next搭建个人博客（更换主题）</p>
       </a>
 
-      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-geng-huan-zhu-ti/">
+      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-geng-huan-zhu-ti/" class="index-excerpt-wrap">
         
         
           
@@ -290,7 +288,7 @@
   </nav>
   
   <script>
-    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
       ele.href += '#board';
     }
   </script>
@@ -306,7 +304,7 @@
   </main>
 
   
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+    <a id="scroll-top-button" href="#" role="button">
       <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
     </a>
   
@@ -342,9 +340,10 @@
   <footer class="mt-5">
   <div class="text-center py-3">
     <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
       <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
     </div>
     
 
@@ -358,7 +357,6 @@
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
 <script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="https://cdn.staticfile.org/mdbootstrap/4.13.0/js/mdb.min.js" ></script>
 <script  src="/js/main.js" ></script>
 
 
@@ -381,14 +379,6 @@
 <!-- Plugins -->
 
 
-
-  <script  src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').addClass('prettyprint  linenums');
-      prettyPrint();
-    })
-  </script>
 
 
 
@@ -441,17 +431,11 @@
 
 
 
-  <script defer src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  <script>
-    $("#post img:not(.no-zoom img, img[no-zoom])").each(
-      function () {
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "images");
-        $(element).attr("href", $(this).attr("src"));
-        $(this).wrap(element);
-      }
-    );
-  </script>
+
+
+
+
+
 
 
 
