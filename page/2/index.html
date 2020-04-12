@@ -18,10 +18,11 @@
   <meta name="keywords" content="生活,科技">
   <title>⌬の空间</title>
 
-  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
 
 
   <link rel="stylesheet" href="/lib/prettify/tomorrow.min.css">
@@ -57,49 +58,55 @@
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/">首页</a>
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/archives/">归档</a>
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/categories/">分类</a>
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/tags/">标签</a>
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/about/">关于</a>
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/links/">友链</a>
+            <a class="nav-link" href="/links/">
+              <i class="iconfont icon-link-fill"></i>
+              友链</a>
           </li>
         
         
@@ -117,7 +124,7 @@
          style="background: url('https://cdn.jsdelivr.net/gh/miku-o/imgData/2020/03/21/612d6ess22.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -128,7 +135,7 @@
 
           
             <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
+              <i class="iconfont icon-arrowdown"></i>
             </div>
           
         </div>
@@ -152,40 +159,41 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/">
-        <p class="h4 index-header">Hexo-Next搭建个人博客（安装与部署）</p>
+      <a class="index-header" href="/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/">Hexo-Next搭建个人博客（安装与部署）</a>
+
+      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/" class="index-excerpt">
+        
+        
+          
+        
+        <div>Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js</div>
       </a>
 
-      <a href="/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/" class="index-excerpt-wrap">
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-08-23
+          </div>
         
         
-          
-          
-        
-        <div class="index-excerpt" style="max-height: none;">
-          <div class="index-text mb-1">Hexo是一个快速、简洁且高效的静态站点生成框架，它基于Node.js...</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-23&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/hexo/">hexo</a>
+            
+          </div>
         
         
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/hexo/">hexo</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/hexo/">hexo</a>&nbsp;
-          
-            <a href="/tags/termux/">termux</a>&nbsp;
-          
-            <a href="/tags/教程/">教程</a>&nbsp;
-          
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/hexo/">hexo</a>
+            
+              <a href="/tags/termux/">termux</a>
+            
+              <a href="/tags/教程/">教程</a>
+            
+          </div>
         
       </div>
     </div>
@@ -195,38 +203,39 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2019/termux-mei-hua/">
-        <p class="h4 index-header">Termux美化</p>
+      <a class="index-header" href="/2019/termux-mei-hua/">Termux美化</a>
+
+      <a href="/2019/termux-mei-hua/" class="index-excerpt">
+        
+        
+          
+        
+        <div>■软件名称:Termux</div>
       </a>
 
-      <a href="/2019/termux-mei-hua/" class="index-excerpt-wrap">
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-08-22
+          </div>
         
         
-          
-          
-        
-        <div class="index-excerpt" style="max-height: none;">
-          <div class="index-text mb-1">■软件名称:Termux...</div>
-        </div>
-      </a>
-
-      <div class="index-btm">
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-22&nbsp;&nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Termux/">Termux</a>
+            
+          </div>
         
         
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Termux/">Termux</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/教程/">教程</a>&nbsp;
-          
-            <a href="/tags/Termux/">Termux</a>&nbsp;
-          
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/教程/">教程</a>
+            
+              <a href="/tags/Termux/">Termux</a>
+            
+          </div>
         
       </div>
     </div>
@@ -236,42 +245,43 @@
     
     
     <div class="col-12 col-md-12 mx-auto index-info">
-      <a href="/2019/zai-termux-shi-yong-bilibili-gua-ji-jiao-ben/">
-        <p class="h4 index-header">在termux使用bilibili挂机脚本</p>
-      </a>
+      <a class="index-header" href="/2019/zai-termux-shi-yong-bilibili-gua-ji-jiao-ben/">在termux使用bilibili挂机脚本</a>
 
-      <a href="/2019/zai-termux-shi-yong-bilibili-gua-ji-jiao-ben/" class="index-excerpt-wrap">
+      <a href="/2019/zai-termux-shi-yong-bilibili-gua-ji-jiao-ben/" class="index-excerpt">
         
         
           
-          
         
-        <div class="index-excerpt" style="max-height: none;">
-          <div class="index-text mb-1">
+        <div>
 转载自酷安
-...</div>
-        </div>
+</div>
       </a>
 
-      <div class="index-btm">
+      <div class="index-btm post-metas">
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-22&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Termux/">Termux</a>&nbsp;
-          &nbsp;
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-08-22
+          </div>
         
         
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/termux/">termux</a>&nbsp;
-          
-            <a href="/tags/教程/">教程</a>&nbsp;
-          
-            <a href="/tags/bilibili/">bilibili</a>&nbsp;
-          
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Termux/">Termux</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/termux/">termux</a>
+            
+              <a href="/tags/教程/">教程</a>
+            
+              <a href="/tags/bilibili/">bilibili</a>
+            
+          </div>
         
       </div>
     </div>
@@ -279,9 +289,9 @@
 
 
 
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
     </span>
   </nav>
   
@@ -303,7 +313,7 @@
 
   
     <a id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
     </a>
   
 
@@ -353,7 +363,6 @@
 
 <!-- SCRIPTS -->
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 <script  src="/js/main.js" ></script>
 
@@ -366,8 +375,6 @@
 
   <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
   <script  src="/js/clipboard-use.js" ></script>
-
-
 
 
 

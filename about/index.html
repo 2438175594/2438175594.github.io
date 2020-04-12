@@ -18,10 +18,11 @@
   <meta name="keywords" content="生活,科技">
   <title>关于 - ⌬の空间</title>
 
-  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css">
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
 
 
   <link rel="stylesheet" href="/lib/prettify/tomorrow.min.css">
@@ -57,49 +58,55 @@
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/">首页</a>
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/archives/">归档</a>
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              归档</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/categories/">分类</a>
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/tags/">标签</a>
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/about/">关于</a>
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
           </li>
         
           
           
           
-          
           <li class="nav-item">
-            <a class="nav-link" href="/links/">友链</a>
+            <a class="nav-link" href="/links/">
+              <i class="iconfont icon-link-fill"></i>
+              友链</a>
           </li>
         
         
@@ -117,7 +124,7 @@
          style="background: url('https://cdn.jsdelivr.net/gh/miku-o/imgData/2020/03/21/612d6ess22.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
-        <div class="mask flex-center">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="container text-center white-text fadeInUp">
             <span class="h2" id="subtitle">
               
@@ -149,19 +156,31 @@
                 
 
 <div class="text-center">
-  <p class="h3">Zhang YiJia</p>
-  <p>ฅ^•ﻌ•^ฅ</p>
-  
-    
-    
-    
-    <a href="https://github.com/2438175594" class="h4 px-1 false">
-      <i class="fab fa-github" aria-hidden="true"></i>
+  <div class="about-info">
+    <div class="about-name">Zhang YiJia</div>
+    <div class="about-intro">ฅ^•ﻌ•^ฅ</div>
+    <div class="about-icons">
       
-    </a>
-  
-    
-    
+        
+        
+        
+        <a href="https://github.com/2438175594" class="">
+          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
+          
+        </a>
+      
+        
+        
+        
+        <a href="javascript:;" class="qr-trigger">
+          <i class="iconfont icon-wechat-fill" aria-hidden="true"></i>
+          
+            <img class="qr-img" src="/img/favicon.png" srcset="/img/loading.gif" alt="qrcode" />
+          
+        </a>
+      
+    </div>
+  </div>
 </div>
 <div class="mt-5 markdown-body">
   <p align="center"><img src="https://cdn.jsdelivr.net/gh/miku-o/emoji/coolapk_py%E4%BA%A4%E6%98%93.png" srcset="/img/loading.gif" alt=":py交易:" style="height: 1.5em; max-height: 1.5em;"> / <img src="https://cdn.jsdelivr.net/gh/miku-o/emoji/bilibili_%E7%9F%A5%E8%AF%86%E5%A2%9E%E5%8A%A0.png" srcset="/img/loading.gif" alt=":知识增加:" style="height: 1.5em; max-height: 1.5em;"> / <img src="https://cdn.jsdelivr.net/gh/miku-o/emoji/coolapk_%E5%8F%97%E8%99%90%E6%BB%91%E7%A8%BD.png" srcset="/img/loading.gif" alt=":受虐滑稽:" style="height: 1.5em; max-height: 1.5em;"></p>
@@ -179,7 +198,7 @@
 
   
     <a id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
     </a>
   
 
@@ -229,7 +248,6 @@
 
 <!-- SCRIPTS -->
 <script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/popper.js/1.16.1/umd/popper.min.js" ></script>
 <script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 <script  src="/js/main.js" ></script>
 
@@ -242,8 +260,6 @@
 
   <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
   <script  src="/js/clipboard-use.js" ></script>
-
-
 
 
 
