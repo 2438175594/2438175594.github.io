@@ -225,33 +225,33 @@
 <blockquote><p>此处代码请一行一行的复制#号之前的内容并回车。</p>
 </blockquote>
 
-<pre><code>pkg update　　#升级包
-pkg install vim git nodejs openssh　　#询问之后输入 y 然后回车
-npm install -g hexo-cli　　#安装 hexo
-hexo init hexo　　#新建一个名为 hexo 的文件夹并初始化 hexo
-cd hexo　　#进入 hexo 文件夹
-npm install　　#部署 hexo</code></pre>
+<pre><code class="hljs ">pkg <span class="hljs-keyword">update</span>　　<span class="hljs-comment">#升级包</span>
+pkg <span class="hljs-keyword">install</span> vim git nodejs openssh　　<span class="hljs-comment">#询问之后输入 y 然后回车</span>
+npm <span class="hljs-keyword">install</span> -g hexo-cli　　<span class="hljs-comment">#安装 hexo</span>
+hexo init hexo　　<span class="hljs-comment">#新建一个名为 hexo 的文件夹并初始化 hexo</span>
+cd hexo　　<span class="hljs-comment">#进入 hexo 文件夹</span>
+npm <span class="hljs-keyword">install</span>　　<span class="hljs-comment">#部署 hexo</span></code></pre>
 
 <p>至此，hexo 已安装完成，指定的文件夹目录如下。</p>
-<pre><code>.
-├── _config.yml
+<pre><code class="hljs ">.
+├── <span class="hljs-variable">_config</span>.yml
 ├── package.json
 ├── scaffolds
 ├── source
-|   ├── _drafts
-|   └── _posts
+|   ├── <span class="hljs-variable">_drafts</span>
+|   └── <span class="hljs-variable">_posts</span>
 └── themes</code></pre>
 
 <p>更多信息可以查看<a href="https://hexo.io/zh-cn/docs/setup" target="_blank" rel="noopener">建站|hexo</a>。</p>
 <p>继续我们的 hexo</p>
-<pre><code>hexo new postname　　#postname 就是文章名称
-vim source&#x2F;_posts&#x2F;postname.md　　#用 vim 编辑器编辑 mark down 文本，就是你的文章</code></pre>
+<pre><code class="hljs ">hexo new postname　　<span class="hljs-selector-id">#postname</span> 就是文章名称
+vim source/_posts/postname<span class="hljs-selector-class">.md</span>　　#用 vim 编辑器编辑 <span class="hljs-selector-tag">mark</span> down 文本，就是你的文章</code></pre>
 <p>按<code>i</code>进入编辑模式。<br>编辑完成后，按住<code>音量加点击E</code>模拟 Ees 键，输入<code>ZZ</code>保存并退出，当然也可以直接右滑后长按KEYBOARD调出辅助键盘。</p>
-<pre><code>hexo generate　　#生成静态文件
-hexo server　　#启动服务器</code></pre>
+<pre><code class="hljs ">hexo generate　　#生成静态文件
+hexo<span class="hljs-built_in"> server　</span>　#启动服务器</code></pre>
 <p>以上命令也可以简写为</p>
-<pre><code>hexo g
-hexo s</code></pre>
+<pre><code class="hljs "><span class="hljs-attr">hexo</span> <span class="hljs-string">g</span>
+<span class="hljs-attr">hexo</span> <span class="hljs-string">s</span></code></pre>
 <p>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到你的网站。至此，hexo 搭建完成。</p>
 <h1 id="GitHub设置ssh"><a href="#GitHub设置ssh" class="headerlink" title="GitHub设置ssh"></a>GitHub设置ssh</h1><p>本来不想的，结果还是一堆图片,以下是一份超详细的<a href="https://github.com" target="_blank" rel="noopener">GitHub</a>注册教程。</p>
 <h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>首先需要注册一个 GitHub 账号，地址<a href="https://github.com。" target="_blank" rel="noopener">https://github.com。</a><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541198/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/1.png" srcset="/img/loading.gif" alt="1"></p>
@@ -276,15 +276,15 @@ hexo s</code></pre>
 <center>复制按钮</center>
 或者复制这个按钮前面的一长串内容。
 你会得到这样一串字符
-<pre><code>git@github.com:username&#x2F;username.github.io.git</code></pre>
+<pre><code class="hljs ">git@github<span class="hljs-selector-class">.com</span>:username/username<span class="hljs-selector-class">.github</span><span class="hljs-selector-class">.io</span><span class="hljs-selector-class">.git</span></code></pre>
 然后
-<pre><code>cd hexo　　#进入 hexo 文件夹
-vim _config.yml　　#修改配置文件</code></pre>
+<pre><code class="hljs "><span class="hljs-built_in">cd</span> hexo　　<span class="hljs-comment">#进入 hexo 文件夹</span>
+vim _config.yml　　<span class="hljs-comment">#修改配置文件</span></code></pre>
 把 depoly 部分修改为：
-<pre><code>deploy:
-  type: git
-  repo: git@github.com:username&#x2F;username.github.io.git
-  branch: master</code></pre>
+<pre><code class="hljs "><span class="hljs-attribute">deploy</span>:
+  <span class="hljs-attribute">type</span>: git
+  <span class="hljs-attribute">repo</span>: git<span class="hljs-variable">@github</span>.<span class="hljs-attribute">com</span>:username/username.github.io.git
+  <span class="hljs-attribute">branch</span>: master</code></pre>
 保存并退出
 请注意缩进，可使用`空格`或者`tab键`
 其实就是上面复制的内容，当然你也可以直接填写repo部分，username 替换为你的用户名。
@@ -292,27 +292,27 @@ vim _config.yml　　#修改配置文件</code></pre>
 <h2 id="激活仓库"><a href="#激活仓库" class="headerlink" title="激活仓库"></a>激活仓库</h2><p>回到浏览器点击<code>README</code>新建一个<code>README</code>文件用来激活仓库。<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541931/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/12.png" srcset="/img/loading.gif" alt="12"><br>随便写一些什么，反正一会就没有了，然后点击<code>Commit new file</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566541995/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/13.png" srcset="/img/loading.gif" alt="13"><br>然后你会看见这个<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542065/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/14.png" srcset="/img/loading.gif" alt="14"><br>至此，GitHub端工作完成</p>
 <hr>
 <h2 id="设置SSH-key"><a href="#设置SSH-key" class="headerlink" title="设置SSH key"></a>设置SSH key</h2><p>打开Termux，输入：</p>
-<pre><code>ssh-keygen -t rsa -C &quot;example@mail.com&quot;　　#创建SSH key，引号内替换成你注册GitHub时填的邮箱。</code></pre>
+<pre><code class="hljs ">ssh-keygen -t rsa -C <span class="hljs-string">"example@mail.com"</span>　　<span class="hljs-comment">#创建SSH key，引号内替换成你注册GitHub时填的邮箱。</span></code></pre>
 <p>之后会要求输入一次文件名，两次密码，可以直接回车忽略，SSH key创建成功之后，运行：</p>
-<pre><code>vim .ssh&#x2F;id_rsa.pub　　#进入SSH key的文件</code></pre>
+<pre><code class="hljs ">vim <span class="hljs-string">.ssh/id_rsa.pub</span>　　<span class="hljs-comment">#进入SSH key的文件</span></code></pre>
 <p>复制里面所有内容后打开GitHub，点击头像↓<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542125/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/15.png" srcset="/img/loading.gif" alt="15"></p>
 <p>点击<code>Settings</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542181/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/16.png" srcset="/img/loading.gif" alt="16"></p>
 <p>点击<code>SSH and GPG keys</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542240/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/17.png" srcset="/img/loading.gif" alt="17"></p>
 <p>点击<code>new SSH key</code><br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542297/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/18.jpg" srcset="/img/loading.gif" alt="18"></p>
 <p>出现以下内容：<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566542364/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/19.png" srcset="/img/loading.gif" alt="19"><br>Title填自己喜欢的，Key里面粘贴刚才复制的密匙，填好后点<code>Add SSH key</code></p>
 <p>打开Termux，输入：</p>
-<pre><code>ssh -T git@github.com　　#检验SSH key</code></pre>
+<pre><code class="hljs "><span class="hljs-attribute">ssh</span> -T git<span class="hljs-variable">@github</span>.com　　<span class="hljs-comment">#检验SSH key</span></code></pre>
 <p>向你确认，输入<code>yes</code>后回车。<br>成功后会显示Hi rd-dafuz！….</p>
 <p>然后</p>
-<pre><code>npm install hexo-deployer-git --save　　#安装git的拓展插件</code></pre>
+<pre><code class="hljs ">npm <span class="hljs-keyword">install</span> hexo-deployer-git --save　　<span class="hljs-comment">#安装git的拓展插件</span></code></pre>
 <p>此处报错时常见的解决方案</p>
-<pre><code>npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org　　#切换到国内的淘宝源，对，阿里巴巴的那个淘宝！</code></pre>
+<pre><code class="hljs ">npm config <span class="hljs-keyword">set</span> registry https://registry.npm.taobao<span class="hljs-meta">.org</span>　　<span class="hljs-meta">#切换到国内的淘宝源，对，阿里巴巴的那个淘宝！</span></code></pre>
 
 
-<h1 id="开始push"><a href="#开始push" class="headerlink" title="开始push"></a>开始push</h1><pre><code>hexo generate　　#生成文件
+<h1 id="开始push"><a href="#开始push" class="headerlink" title="开始push"></a>开始push</h1><pre><code class="hljs ">hexo <span class="hljs-keyword">generate</span>　　#生成文件
 hexo deploy　　#部署文件</code></pre>
 <p>也可以简写为：</p>
-<pre><code>hexo g -d</code></pre>
+<pre><code class="hljs "><span class="hljs-attribute">hexo g -d</span></code></pre>
 <p>最后出现<code>INFO Deploy done：git</code>即为成功,打开<code>https://username.github.io</code>即可查看你的hexo了。</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.sqlsec.com/2018/05/termux.html" target="_blank" rel="noopener">Termux 高级终端安装使用配置教程 | 国光</a><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">文档 | Hexo</a><br>及百度、bing、Google （请善用搜索引擎）</p>
 

@@ -170,7 +170,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      340 字
+      327 字
     </span>
   
 
@@ -180,7 +180,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      3
        分钟
     </span>
   
@@ -222,20 +222,20 @@
 <p>为Termux添加oh my zsh终端环境以及zsh-syntax-highlighting，设置色彩样式（大部分来自Gogh）和Powerline字体（来自powerline/fonts）。oh-my-zsh主题默认为agnoster，颜色样式默认为Tango，字体默认为Ubuntu。</p>
 <p>【注意】<br>此 Repo 使用 Termux 官方源，在中国大陆可能需要将 Termux 应用添加到代理列表。</p>
 <p>第一步更新apt(遇到y/n输入y)</p>
-<pre><code>apt update &amp;&amp; apt upgrade</code></pre>
+<pre><code class="hljs ">apt <span class="hljs-meta">update</span> <span class="hljs-variable">&amp;&amp;</span> apt upgrade</code></pre>
 
 <p>第二步安装curl环境</p>
-<pre><code>apt install curl</code></pre>
+<pre><code class="hljs ">apt <span class="hljs-keyword">install</span> curl</code></pre>
 
 <p>第三步安装脚本</p>
-<pre><code>sh -c &quot;$(curl -fsSL https:&#x2F;&#x2F;github.com&#x2F;Cabbagec&#x2F;termux-ohmyzsh&#x2F;raw&#x2F;master&#x2F;install.sh)&quot;</code></pre>
+<pre><code class="hljs ">sh -c <span class="hljs-string">"<span class="hljs-variable">$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)</span>"</span></code></pre>
 
 <p>第四步跟着ohmyzsh设置(没有英语基础的可以一个个试)<br>第一步是设置色彩样式<br>第二步是设置字体(需重启termux后生效)</p>
 <p>第二次打开时若要更换色彩样式输入</p>
-<pre><code>~&#x2F;.termux&#x2F;colors.sh</code></pre>
+<pre><code class="hljs ">~<span class="hljs-regexp">/.termux/</span>colors.sh</code></pre>
 
 <p>更换字体输入</p>
-<pre><code>~&#x2F;.termux&#x2F;fonts.sh</code></pre>
+<pre><code class="hljs ">~<span class="hljs-regexp">/.termux/</span>fonts.sh</code></pre>
 
             </article>
             <hr>

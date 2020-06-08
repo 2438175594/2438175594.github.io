@@ -170,7 +170,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      178 字
+      169 字
     </span>
   
 
@@ -217,23 +217,23 @@
 <a id="more"></a>
 
 <p>打开Termux输入</p>
-<pre><code>pkg up &amp;&amp; pkg in curl &amp;&amp; pkg in php &amp;&amp; pkg in git</code></pre>
+<pre><code class="hljs ">pkg up <span class="hljs-variable">&amp;&amp;</span> pkg <span class="hljs-meta">in</span> curl <span class="hljs-variable">&amp;&amp;</span> pkg <span class="hljs-meta">in</span> php <span class="hljs-variable">&amp;&amp;</span> pkg <span class="hljs-meta">in</span> git</code></pre>
 <p>安装依赖<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441384/%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC/1.jpg" srcset="/img/loading.gif" alt="1" title="正在安装"><br>安装完成之后呢，我们使用git工具把项目拉下来</p>
-<pre><code>git clone https:&#x2F;&#x2F;github.com&#x2F;lkeme&#x2F;BiliHelper.git &amp;&amp; cd BiliHelper&#x2F;conf &amp;&amp; cp user.conf.example user.conf</code></pre>
+<pre><code class="hljs ">git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/lkeme/BiliHelper.git &amp;&amp; <span class="hljs-keyword">cd</span> BiliHelper/<span class="hljs-keyword">conf</span> &amp;&amp; <span class="hljs-keyword">cp</span> user.<span class="hljs-keyword">conf</span>.example user.<span class="hljs-keyword">conf</span></code></pre>
 <p><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441632/%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC/2.jpg" srcset="/img/loading.gif" alt="2" title="拉下来后"><br>使用</p>
-<pre><code>cd ~ &amp;&amp; curl -sS https:&#x2F;&#x2F;getcomposer.org&#x2F;installer | php</code></pre>
+<pre><code class="hljs "><span class="hljs-attribute">cd</span> <span class="hljs-regexp">~ &amp;&amp;</span> curl -sS https://getcomposer.org/installer | php</code></pre>
 <p>安装composer<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441781/%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC/3.jpg" srcset="/img/loading.gif" alt="3" title="安装好了"><br>然后通过</p>
-<pre><code>cp composer.phar BiliHelper
+<pre><code class="hljs ">cp composer<span class="hljs-selector-class">.phar</span> BiliHelper
 cd BiliHelper
-php composer.phar install</code></pre>
+php composer<span class="hljs-selector-class">.phar</span> install</code></pre>
 <p>来安装挂机工具<br>安装好后如下图<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564441986/%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC/4.jpg" srcset="/img/loading.gif" alt="4" title="安装完成"><br>接下来是最后一步！设置用户名和密码<br>输入</p>
-<pre><code>vi conf&#x2F;user.conf</code></pre>
+<pre><code class="hljs "><span class="hljs-keyword">vi</span> <span class="hljs-keyword">conf</span>/user.<span class="hljs-keyword">conf</span></code></pre>
 <p>进行设置<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1564442184/%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC/5.jpg" srcset="/img/loading.gif" alt="5" title="配置的地方"><br>最后通过esc和ZZ退出编辑器！<br>输入</p>
-<pre><code>php index.php</code></pre>
+<pre><code class="hljs ">php <span class="hljs-keyword">index</span>.php</code></pre>
 <p>就可以运行了！<br><img src="https://res.cloudinary.com/q2438175594/image/upload/v1566462547/%E5%9C%A8termux%E4%BD%BF%E7%94%A8bilibili%E6%8C%82%E6%9C%BA%E8%84%9A%E6%9C%AC/6.jpg" srcset="/img/loading.gif" alt="6" title="运行中"></p>
 <p>更新：</p>
-<pre><code>cd BiliHelper
-git pull</code></pre>
+<pre><code class="hljs "><span class="hljs-attr">cd</span> <span class="hljs-string">BiliHelper</span>
+<span class="hljs-attr">git</span> <span class="hljs-string">pull</span></code></pre>
 
             </article>
             <hr>

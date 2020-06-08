@@ -170,7 +170,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.3k 字
+      1.2k 字
     </span>
   
 
@@ -180,7 +180,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      16
+      15
        分钟
     </span>
   
@@ -216,123 +216,123 @@
 <p>如果没有，请阅读<a href="https://2438175594.github.io/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/">Hexo-Next搭建个人博客（安装与部署）</a></p>
 <h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1><p><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">hexo主题</a>，这里有所有的主题，任君选择，找好主题之后，从 Github 上面下载下来，<del>本人使用的是<a href="https://github.com/theme-next/hexo-theme-next/blob/master/README.md" target="_blank" rel="noopener">NexT</a></del>已换成<a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="noopener">fluid</a></p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>最简单的安装方法是克隆整个存储库：</p>
-<pre><code>cd hexo
-git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</code></pre>
+<pre><code class="hljs "><span class="hljs-keyword">cd</span> hexo
+git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/theme-<span class="hljs-keyword">next</span>/hexo-theme-<span class="hljs-keyword">next</span> themes/<span class="hljs-keyword">next</span></code></pre>
 <p>或者，如果您需要任何其他变体，可以查看<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md" target="_blank" rel="noopener">详细的安装说明</a>。</p>
 <h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p>修改站点配置文件<code>_config.yml</code>把<code>theme</code>后改为<code>next</code></p>
-<pre><code># Extensions
-## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;
-## Themes: https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;
+<pre><code class="hljs "># Extensions
+## Plugins: https:<span class="hljs-comment">//hexo.io/plugins/</span>
+## Themes: https:<span class="hljs-comment">//hexo.io/themes/</span>
 theme: next ##把landscape改为next</code></pre>
 
 
 <h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>站点配置文件路径<br><code>~/hexo/_config.yml</code><br>主题配置文件路径<br><code>~/hexo/themes/next/_config.yml</code></p>
 <h2 id="站点"><a href="#站点" class="headerlink" title="站点"></a>站点</h2><h3 id="配置hexo网站相关信息"><a href="#配置hexo网站相关信息" class="headerlink" title="配置hexo网站相关信息"></a>配置hexo网站相关信息</h3><p>找到site的设置 按下面备注修改相关信息</p>
-<pre><code># Site
-title: ⌬の空间  #网站标题
-subtitle: 为了梦想而努力!  #网站副标题
-description:     #描述,介绍网站的
-keywords: 生活,科技 #网站的关键字
-author: ZHANGYIJIA  #博主姓名
-language: zh-CN #语言  zh-CN 是简体中文
-timezone:    #时区</code></pre>
+<pre><code class="hljs "><span class="hljs-meta"># Site</span>
+<span class="hljs-symbol">title:</span> ⌬の空间  <span class="hljs-meta">#网站标题</span>
+<span class="hljs-symbol">subtitle:</span> 为了梦想而努力!  <span class="hljs-meta">#网站副标题</span>
+<span class="hljs-symbol">description:</span>     <span class="hljs-meta">#描述,介绍网站的</span>
+<span class="hljs-symbol">keywords:</span> 生活,科技 <span class="hljs-meta">#网站的关键字</span>
+<span class="hljs-symbol">author:</span> ZHANGYIJIA  <span class="hljs-meta">#博主姓名</span>
+<span class="hljs-symbol">language:</span> <span class="hljs-built_in">zh</span>-CN <span class="hljs-meta">#语言  zh-CN 是简体中文</span>
+<span class="hljs-symbol">timezone:</span>    <span class="hljs-meta">#时区</span></code></pre>
 
 <h3 id="设置hexo永久链接"><a href="#设置hexo永久链接" class="headerlink" title="设置hexo永久链接"></a>设置hexo永久链接</h3><p>设置永久链接的目的是为了便于分享和seo优化.这样别人收藏地址后不会出现链接失效</p>
-<pre><code># URL
-url: https:&#x2F;&#x2F;2438175594.github.io #网站的首页地址
-root: &#x2F; #网站的根目录设置
-permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title.html # 这种设置的url表现为2018&#x2F;10&#x2F;18&#x2F;hello-world.html 样式</code></pre>
+<pre><code class="hljs "><span class="hljs-comment"># URL</span>
+<span class="hljs-attr">url:</span> <span class="hljs-attr">https://2438175594.github.io</span> <span class="hljs-comment">#网站的首页地址</span>
+<span class="hljs-attr">root:</span> <span class="hljs-string">/</span> <span class="hljs-comment">#网站的根目录设置</span>
+<span class="hljs-attr">permalink:</span> <span class="hljs-string">:year/:month/:day/:title.html</span> <span class="hljs-comment"># 这种设置的url表现为2018/10/18/hello-world.html 样式</span></code></pre>
 <p>默认链接样式可修改为 (permalink配置只能有一种,关闭某种开头加 #)</p>
-<pre><code>permalink: :category&#x2F;:title.html #用分类和博客title当做url地址</code></pre>
+<pre><code class="hljs "><span class="hljs-symbol">permalink:</span> <span class="hljs-symbol">:category/</span><span class="hljs-symbol">:title</span>.html <span class="hljs-comment">#用分类和博客title当做url地址</span></code></pre>
 
 
 <h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><h3 id="配置hexo中的tag-categories菜单"><a href="#配置hexo中的tag-categories菜单" class="headerlink" title="配置hexo中的tag,categories菜单"></a>配置hexo中的tag,categories菜单</h3><p>默认菜单只开启了首页和归档,hexo所有图标均来自<a href="http://fontawesome.dashgame.com/" target="_blank" rel="noopener">fontawesome</a></p>
-<pre><code>menu: #菜单设置为 菜单名: &#x2F;菜单目录 || 菜单图标名字
-  home: &#x2F; || home 
-  about: &#x2F;about&#x2F; || user
-  tags: &#x2F;tags&#x2F; || tags
-  categories: &#x2F;categories&#x2F; || th
-  archives: &#x2F;archives&#x2F; || archive
-  commonweal: &#x2F;404&#x2F; || heartbeat
-menu_settings:
-  icons: true  #显示图标
-  badges: true  #显示统计信息</code></pre>
+<pre><code class="hljs "><span class="hljs-symbol">menu:</span> <span class="hljs-meta">#菜单设置为 菜单名: /菜单目录 || 菜单图标名字</span>
+<span class="hljs-symbol">  home:</span> / || home 
+<span class="hljs-symbol">  about:</span> <span class="hljs-meta-keyword">/about/</span> || user
+<span class="hljs-symbol">  tags:</span> <span class="hljs-meta-keyword">/tags/</span> || tags
+<span class="hljs-symbol">  categories:</span> <span class="hljs-meta-keyword">/categories/</span> || th
+<span class="hljs-symbol">  archives:</span> <span class="hljs-meta-keyword">/archives/</span> || archive
+<span class="hljs-symbol">  commonweal:</span> /<span class="hljs-number">404</span>/ || heartbeat
+<span class="hljs-symbol">menu_settings:</span>
+<span class="hljs-symbol">  icons:</span> true  <span class="hljs-meta">#显示图标</span>
+<span class="hljs-symbol">  badges:</span> true  <span class="hljs-meta">#显示统计信息</span></code></pre>
 <p>手动生成hexo菜单对应文件 新菜单开启后是没有对应文件的,所以要手动生成about,tags,categories页面</p>
 <blockquote>
 <p>新建about页面</p>
 </blockquote>
-<pre><code>cd hexo
-hexo new page about #about就是普通的布局一般用来介绍站点信息和博主信息等</code></pre>
+<pre><code class="hljs ">cd hexo
+hexo new<span class="hljs-built_in"> page </span>about #about就是普通的布局一般用来介绍站点信息和博主信息等</code></pre>
 <blockquote>
 <p>新建一个tags页面</p>
 </blockquote>
-<pre><code>cd hexo
-hexo new page tags</code></pre>
+<pre><code class="hljs ">cd hexo
+hexo new<span class="hljs-built_in"> page </span>tags</code></pre>
 <p>找到tags文件<br><code>hexo/source/tags/index.md</code>编辑它</p>
-<pre><code>---
-title: All tags
-date: 2018-10-01 13:58:44 #时间随意
-type: &quot;tags&quot; #类型一定要为tags
----</code></pre>
+<pre><code class="hljs "><span class="hljs-meta">---</span>
+<span class="hljs-attr">title:</span> <span class="hljs-string">All</span> <span class="hljs-string">tags</span>
+<span class="hljs-attr">date:</span> <span class="hljs-number">2018</span><span class="hljs-bullet">-10</span><span class="hljs-bullet">-01</span> <span class="hljs-number">13</span><span class="hljs-string">:58:44</span> <span class="hljs-comment">#时间随意</span>
+<span class="hljs-attr">type:</span> <span class="hljs-string">"tags"</span> <span class="hljs-comment">#类型一定要为tags</span>
+<span class="hljs-meta">---</span></code></pre>
 <blockquote>
 <p>新建一个categories页面</p>
 </blockquote>
-<pre><code>cd blog
-hexo new page categories</code></pre>
+<pre><code class="hljs ">cd blog
+hexo new<span class="hljs-built_in"> page </span>categories</code></pre>
 <p>找到categories文件<br><code>hexo/source/categories/index.md</code>编辑它</p>
-<pre><code>---
-title: 分类
-date: 2018-10-15 00:03:57
-type: &quot;categories&quot;
----</code></pre>
+<pre><code class="hljs "><span class="hljs-meta">---</span>
+<span class="hljs-attr">title:</span> <span class="hljs-string">分类</span>
+<span class="hljs-attr">date:</span> <span class="hljs-number">2018</span><span class="hljs-bullet">-10</span><span class="hljs-bullet">-15</span> <span class="hljs-number">00</span><span class="hljs-string">:03:57</span>
+<span class="hljs-attr">type:</span> <span class="hljs-string">"categories"</span>
+<span class="hljs-meta">---</span></code></pre>
 
 
 <h3 id="配置hexo站点的footer信息"><a href="#配置hexo站点的footer信息" class="headerlink" title="配置hexo站点的footer信息"></a>配置hexo站点的footer信息</h3><p>底部footer可以开关显示hexo版权,theme版权,还有建站时间等个性化配置</p>
-<pre><code>footer:
-  since: 2015   #建站开始时间
-  icon:
-    name: user  #设置 建站初始时间和至今时间中间的图标 默认是一个&#39;小人像&#39;更改user为heart可以变成一个&#39;心&#39;
-    color: &quot;#808080&quot; #更改图标的颜色 红色为 &#39;#ff0000&#39;
-  powered:
-    enable: true #是否开启hexo驱动
-    version: true #是否开启hexo版本号
-  theme:
-    enable: true #是否开启theme驱动
-    version: true #是否开启主题版本号
-  custom_text: Hosted by &lt;a target=&quot;_blank&quot; rel=&quot;external nofollow&quot; href=&quot;https:&#x2F;&#x2F;pages.coding.me&quot;&gt;&lt;b&gt;Coding Pages&lt;&#x2F;b&gt;&lt;&#x2F;a&gt; #这里的底部标识是为了添加coding page服务时的版权声明 打开注释就可以看到底部有一个 hosted by coding pages</code></pre>
+<pre><code class="hljs "><span class="hljs-attr">footer:</span>
+<span class="hljs-attr">  since:</span> <span class="hljs-number">2015</span>   <span class="hljs-comment">#建站开始时间</span>
+<span class="hljs-attr">  icon:</span>
+<span class="hljs-attr">    name:</span> <span class="hljs-string">user</span>  <span class="hljs-comment">#设置 建站初始时间和至今时间中间的图标 默认是一个'小人像'更改user为heart可以变成一个'心'</span>
+<span class="hljs-attr">    color:</span> <span class="hljs-string">"#808080"</span> <span class="hljs-comment">#更改图标的颜色 红色为 '#ff0000'</span>
+<span class="hljs-attr">  powered:</span>
+<span class="hljs-attr">    enable:</span> <span class="hljs-literal">true</span> <span class="hljs-comment">#是否开启hexo驱动</span>
+<span class="hljs-attr">    version:</span> <span class="hljs-literal">true</span> <span class="hljs-comment">#是否开启hexo版本号</span>
+<span class="hljs-attr">  theme:</span>
+<span class="hljs-attr">    enable:</span> <span class="hljs-literal">true</span> <span class="hljs-comment">#是否开启theme驱动</span>
+<span class="hljs-attr">    version:</span> <span class="hljs-literal">true</span> <span class="hljs-comment">#是否开启主题版本号</span>
+<span class="hljs-attr">  custom_text:</span> <span class="hljs-string">Hosted</span> <span class="hljs-string">by</span> <span class="hljs-string">&lt;a</span> <span class="hljs-string">target="_blank"</span> <span class="hljs-string">rel="external</span> <span class="hljs-string">nofollow"</span> <span class="hljs-string">href="https://pages.coding.me"&gt;&lt;b&gt;Coding</span> <span class="hljs-string">Pages&lt;/b&gt;&lt;/a&gt;</span> <span class="hljs-comment">#这里的底部标识是为了添加coding page服务时的版权声明 打开注释就可以看到底部有一个 hosted by coding pages</span></code></pre>
 
-<h3 id="hexo网站next主题侧边栏宽度-头像信息-头像设置圆形和头像旋转"><a href="#hexo网站next主题侧边栏宽度-头像信息-头像设置圆形和头像旋转" class="headerlink" title="hexo网站next主题侧边栏宽度,头像信息,头像设置圆形和头像旋转"></a>hexo网站next主题侧边栏宽度,头像信息,头像设置圆形和头像旋转</h3><pre><code>sidebar:
-  position: left  #选择pisces 或者 gemini 主题是 可以 选择侧边栏 位置 调整左边或者右边
-  #position: right
-  width: 300   # muse mist 主题 可以控制侧边栏的宽度 
-  display: post   #如果是muse mist 主题 可以选择 侧边栏弹出动作  post 是 只在内容页弹出
-  #display: always  #全局弹出
-  #display: hide    #全局隐藏侧边栏 右下角有角标唤出
-  #display: remove  #移除侧边栏
-avatar:
-  url: &#x2F;images&#x2F;avatar.gif  #设置头像资源的位置
-  rounded: false  #开启圆形头像
-  opacity: 1    #不透明的比例  0 就是完全透明
-  rotated: false  #开启旋转</code></pre>
+<h3 id="hexo网站next主题侧边栏宽度-头像信息-头像设置圆形和头像旋转"><a href="#hexo网站next主题侧边栏宽度-头像信息-头像设置圆形和头像旋转" class="headerlink" title="hexo网站next主题侧边栏宽度,头像信息,头像设置圆形和头像旋转"></a>hexo网站next主题侧边栏宽度,头像信息,头像设置圆形和头像旋转</h3><pre><code class="hljs "><span class="hljs-attr">sidebar:</span>
+<span class="hljs-attr">  position:</span> <span class="hljs-string">left</span>  <span class="hljs-comment">#选择pisces 或者 gemini 主题是 可以 选择侧边栏 位置 调整左边或者右边</span>
+  <span class="hljs-comment">#position: right</span>
+<span class="hljs-attr">  width:</span> <span class="hljs-number">300</span>   <span class="hljs-comment"># muse mist 主题 可以控制侧边栏的宽度 </span>
+<span class="hljs-attr">  display:</span> <span class="hljs-string">post</span>   <span class="hljs-comment">#如果是muse mist 主题 可以选择 侧边栏弹出动作  post 是 只在内容页弹出</span>
+  <span class="hljs-comment">#display: always  #全局弹出</span>
+  <span class="hljs-comment">#display: hide    #全局隐藏侧边栏 右下角有角标唤出</span>
+  <span class="hljs-comment">#display: remove  #移除侧边栏</span>
+<span class="hljs-attr">avatar:</span>
+<span class="hljs-attr">  url:</span> <span class="hljs-string">/images/avatar.gif</span>  <span class="hljs-comment">#设置头像资源的位置</span>
+<span class="hljs-attr">  rounded:</span> <span class="hljs-literal">false</span>  <span class="hljs-comment">#开启圆形头像</span>
+<span class="hljs-attr">  opacity:</span> <span class="hljs-number">1</span>    <span class="hljs-comment">#不透明的比例  0 就是完全透明</span>
+<span class="hljs-attr">  rotated:</span> <span class="hljs-literal">false</span>  <span class="hljs-comment">#开启旋转</span></code></pre>
 
-<h3 id="hexo中next主题的社交信息和友链配置"><a href="#hexo中next主题的社交信息和友链配置" class="headerlink" title="hexo中next主题的社交信息和友链配置"></a>hexo中next主题的社交信息和友链配置</h3><pre><code>social: #和菜单设置格式一样  社交名字: 社交url || 社交图标 ,图标信息还是[fontawesome](https:&#x2F;&#x2F;fontawesome.com&#x2F;v4.7.0&#x2F;icons)
-  GitHub: https:&#x2F;&#x2F;github.com&#x2F;yourname || github
-  E-Mail: mailto:yourname@gmail.com || envelope
-  Google: https:&#x2F;&#x2F;plus.google.com&#x2F;yourname || google
+<h3 id="hexo中next主题的社交信息和友链配置"><a href="#hexo中next主题的社交信息和友链配置" class="headerlink" title="hexo中next主题的社交信息和友链配置"></a>hexo中next主题的社交信息和友链配置</h3><pre><code class="hljs "><span class="hljs-attribute">social</span>: #和菜单设置格式一样  社交名字: 社交url || 社交图标 ,图标信息还是[fontawesome](<span class="hljs-attribute">https</span>:<span class="hljs-comment">//fontawesome.com/v4.7.0/icons)</span>
+  <span class="hljs-attribute">GitHub</span>: <span class="hljs-attribute">https</span>:<span class="hljs-comment">//github.com/yourname || github</span>
+  <span class="hljs-attribute">E-Mail</span>: <span class="hljs-attribute">mailto</span>:yourname<span class="hljs-variable">@gmail</span>.com || envelope
+  <span class="hljs-attribute">Google</span>: <span class="hljs-attribute">https</span>:<span class="hljs-comment">//plus.google.com/yourname || google</span>
 
 
-social_icons:
-  nable: true  #显示社交图标
-  icons_only: false #只显示图标的开关
+<span class="hljs-attribute">social_icons</span>:
+  <span class="hljs-attribute">nable</span>: true  #显示社交图标
+  <span class="hljs-attribute">icons_only</span>: false #只显示图标的开关
 
 
 # Blog rolls
-links_icon: link  #友链的图标 参考上文
-links_title: Links #友链的title  比如你可以更改为 友情链接
-links_layout: block #友链摆放的样式,按块 一行一个
-#links_layout: inline #按线摆放,一行很多个 切记 同时只能一种样式
-links:
-  Title: http:&#x2F;&#x2F;example.com&#x2F;  #友链的地址</code></pre>
+<span class="hljs-attribute">links_icon</span>: link  #友链的图标 参考上文
+<span class="hljs-attribute">links_title</span>: Links #友链的title  比如你可以更改为 友情链接
+<span class="hljs-attribute">links_layout</span>: block #友链摆放的样式,按块 一行一个
+#<span class="hljs-attribute">links_layout</span>: inline #按线摆放,一行很多个 切记 同时只能一种样式
+<span class="hljs-attribute">links</span>:
+  <span class="hljs-attribute">Title</span>: <span class="hljs-attribute">http</span>:<span class="hljs-comment">//example.com/  #友链的地址</span></code></pre>
 
             </article>
             <hr>
