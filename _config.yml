@@ -39,7 +39,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
@@ -73,16 +73,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: 
-      github: git@github.com:2438175594/2438175594.github.io.git
+      gitHub: git@2438175594.github.com:2438175594/2438175594.github.io.git
       coding: git@e.coding.net:zhangyijia/zhangyijia.coding.me.git
-      gitee: git@gitee.com:zhangyijia/zhangyijia.git
+      gitee: git@zhangyijia.gitee.com:zhangyijia/zhangyijia.git
       gitlab: git@gitlab.com:2438175594/2438175594.git
       bitbucket: git@bitbucket.org:2438175594/zhangyijia.git
   btanch: master

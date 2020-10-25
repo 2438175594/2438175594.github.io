@@ -16,22 +16,15 @@ categories:
 # 简介
 [Hexo](https://hexo.io/zh-cn/)是一个快速、简洁且高效的静态站点生成框架，它基于[Node.js](https://nodejs.org/en/)。
 ## 特点：
-{% blockquote %}
-### 速度快
-{% endblockquote %}
-Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。
-{% blockquote %}
-### 支持Markdown
-{% endblockquote %}
-Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。
-{% blockquote %}
-### 一键部署
-{% endblockquote %}
-只需一条指令即可部署到Github或其他网站
-{% blockquote %}
-### 丰富的插件
-{% endblockquote %}
-Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。
+
+- 速度快
+  Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。
+- 支持Markdown
+  Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。
+- 一键部署
+  只需一条指令即可部署到Github或其他网站
+- 丰富的插件
+  Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。
 
 ---
 

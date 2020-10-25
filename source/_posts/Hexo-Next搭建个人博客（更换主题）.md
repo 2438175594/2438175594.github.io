@@ -14,11 +14,11 @@ categories: hexo
 # 前置
 已经搭建好的`Hexo`的平台，在本地可以用`server`打开的也算；
 <!-- more -->
-如果没有，请阅读[Hexo-Next搭建个人博客（安装与部署）](https://2438175594.github.io/2019/Hexo-Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E5%AE%89%E8%A3%85%E4%B8%8E%E9%83%A8%E7%BD%B2%EF%BC%89/)
+如果没有，请阅读[Hexo-Next搭建个人博客（安装与部署）](https://2438175594.github.io/2019/hexo-next-da-jian-ge-ren-bo-ke-an-zhuang-yu-bu-shu/)
 
 
 # 主题
-[hexo主题](https://github.com/hexojs/hexo/wiki/Themes)，这里有所有的主题，任君选择，找好主题之后，从 Github 上面下载下来，本人使用的是[NexT](https://github.com/theme-next/hexo-theme-next/blob/master/README.md)
+[hexo主题](https://github.com/hexojs/hexo/wiki/Themes)，这里有所有的主题，任君选择，找好主题之后，从 Github 上面下载下来，~~本人使用的是[NexT](https://github.com/theme-next/hexo-theme-next/blob/master/README.md)~~已换成[fluid](https://github.com/fluid-dev/hexo-theme-fluid)
 
 
 ## 安装

@@ -10,7 +10,7 @@ categories:
   - 图
 top: true
 ---
-![1](https://res.cloudinary.com/q2438175594/image/upload/v1559701550/1.jpg)
+![随机](https://img.tlapi.cf/api.php)
 
 <!-- more -->
 

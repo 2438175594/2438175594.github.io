@@ -10,7 +10,9 @@ tags:
   - bilibili
 categories: Termux
 ---
-点击下载[Termux](https://termux.com/)
+
+> 转载自[酷安](https://www.coolapk.com/feed/8080670?shareKey=MmI3ZWEwZWY0ZjhiNWU3NTY3ODg~&shareUid=1961446&shareFrom=com.coolapk.market_10.0.2-beta1)
+
 <!-- more -->
 
 打开Termux输入

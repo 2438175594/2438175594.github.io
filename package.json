@@ -16,6 +16,7 @@
     "hexo-generator-sitemap": "^2.0.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-permalink-pinyin": "^1.1.0",
+    "hexo-recommended-posts": "^1.1.0",
     "hexo-related-popular-posts": "^3.0.6",
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^2.0.0",
